@@ -28,4 +28,4 @@
    24. 自动化二，空调的不同模式，舒适/节能/睡觉
    25. 自动化三，电视的语音控制
    26. 自动化四，音乐播放睡眠定时
-   27. 自动化五，警报的处理	5. POST的头设置：Authorization，Bearer xxxxxxxxxxxxxxxx(HomeAssistant的token)
+   27. 自动化五，警报的处理
