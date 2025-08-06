@@ -2,7 +2,7 @@
 
 * 硬件：AMDx86小主机，4网口，2USB，HDMI等
 * OS：OpenWrt，Docker+samba+NetBird
-* 网络连接：旁路由+OpenClash
+* 网络连接：旁路由+[OpenClash](https://github.com/lifeexplore/OpenClash-Auxiliary-Files)
 * Docker容器：NodeRed+ESPHome+Mosquitto+Portainer+HomeAssistant+Subconverter+Calendar
 
 
