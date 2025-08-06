@@ -5,7 +5,7 @@
 我的总结准备分以下的部分，具体说明了我的系统的构成，总结我的经验和教训。由于我的系统不可能覆盖不同类型的硬件，也不可能涵盖所有的功能和设置，完全基于我自身的需求考虑，水平有限，难免有很多的不足。仅供参考！
 
 还有一点事先说明，我不分享UI的设计，如果有需要的伙伴，可以在Hassbian或者Bilibili上搜，有不少的大佬有很不错的分享，如：Frankiesmall, koryking等。
-   1. [系统构成](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/System%20Composed.md)，网关的选择建议和说明
+   1. [系统构成](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/System%20Composed.md)（网关的选择建议和说明）
    2. 界面设计，日历，天气等基本功能设置
    3. ESPHOME，Picooc，小米温度计和落地灯等BLE设备
    4. Zigbee，Z2M/ZHA/Z2T的选择
