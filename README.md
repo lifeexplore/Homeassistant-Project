@@ -10,7 +10,7 @@
    6. NodeRed
    7. 为什么要用MQTT？
    8. 围栏设置和人体监测
-   9. 读取HomePod传感器数据
+   9. 读取HomePod传感器数据，请访问 [Conect-Homepod-sensors](https://example.com/my-project)
    10. HomePod，完美的音乐+语音控制+TTS
    11. 电视，和Apple TV的完美组合
    12. UIOT流氓设备的替代
