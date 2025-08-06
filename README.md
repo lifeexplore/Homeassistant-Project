@@ -26,6 +26,6 @@
    22. 自动化一，HomePod传感器读取
    23. 自动化二，Good Morning/Evening
    24. 自动化二，空调的不同模式，舒适/节能/睡觉
-    * 自动化三，电视的语音控制
-    * 自动化四，音乐播放睡眠定时
-    * 自动化五，警报的处理	5. POST的头设置：Authorization，Bearer xxxxxxxxxxxxxxxx(HomeAssistant的token)
+   25. 自动化三，电视的语音控制
+   26. 自动化四，音乐播放睡眠定时
+   27. 自动化五，警报的处理	5. POST的头设置：Authorization，Bearer xxxxxxxxxxxxxxxx(HomeAssistant的token)
