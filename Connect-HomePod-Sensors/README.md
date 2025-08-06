@@ -16,16 +16,16 @@
   https://community.home-assistant.io/t/how-to-integrate-homepod-mini-sensors-into-home-assistant-when-direct-integration-isnt-possible/665074/3	    
 		    
 步骤：
-  1. 在configuration.yaml中增加定义boolean；
-  2. 通过Homekit Bridge将boolean传递给Homekit-Boolean-in-HomeKit.png;
-  3. 定义传感器；
-  4. 设置HomeAssitant下的自动化：timer_to_homekit；
-  5. 从HomeAssistant获取授权的长效Token；
+  1. 在configuration.yaml中增加定义boolean
+  2. 通过Homekit Bridge将boolean传递给Homekit-Boolean-in-HomeKit.png
+  3. 定义传感器
+  4. 设置HomeAssitant下的自动化：timer_to_homekit
+  5. 从HomeAssistant获取授权的长效Token
   4. 设置Homekit的自动化进程-auomation_1.png到automation_4.png
 	
 Homekit设置说明：
-  1. HomeKit Bridge设置的Boolean为触发器；
-  2. 在Home App下的自动化直接编程，不需要单独的捷径，这样iPhone不参与数据的更新；
-  3. 获得的数据类型可以选择，需要选择为数字类型，这样可以统计，追寻历史；
-	4. attributes下的项目是：device_class, state_class, unit_of_measurement, friendly_name和icon。
-	5. POST的头设置：Authorization，Bearer xxxxxxxxxxxxxxxx(HomeAssistant的token)
+  1. HomeKit Bridge设置的Boolean为触发器
+  2. 在Home App下的自动化直接编程，不需要单独的捷径，这样iPhone不参与数据的更新
+  3. 获得的数据类型可以选择，需要选择为数字类型，这样可以统计，追寻历史
+  4. attributes下的项目是：device_class, state_class, unit_of_measurement, friendly_name和icon。
+  5. POST的头设置：Authorization，Bearer xxxxxxxxxxxxxxxx(HomeAssistant的token)
