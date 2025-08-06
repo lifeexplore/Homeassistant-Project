@@ -14,7 +14,7 @@
    9. 读取HomePod传感器数据，[Connect-Homepod-sensors](https://github.com/lifeexplore/Homeassistant-Project/tree/Homeassistant-Project/Connect-HomePod-Sensors)
    10. HomePod，完美的音乐+语音控制+TTS
    11. 电视，和Apple TV的完美组合
-   12. UIOT流氓设备的替代
+   12. UIOT所谓Zigbee设备的替代
    13. 电子秤数据
    14. 空调的MQTT实现，模式设置
    15. 电视的组合设置（小米+Apple TV）
