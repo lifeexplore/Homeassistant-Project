@@ -1,31 +1,29 @@
-目的：将HomePod的温度和湿度传感器数据实时传入HomeAssistant
-说明：由于本人的HomeAssistant是安装在Docker上，如果是其它方式安装的，可能需要一些必要的修改
-
-需要的平台：
-	1. HomeAssistant
-	2. IOS可以需要16以上
-	
-原理：
-	1. 由于IOS的不开放，不可能从其它的软件访问IOS内部的数据，也不可能直接放访问Homepod获得数据，因此只能定时由IOS将数据送给HoneAssistant。
-	2. 分工：
-		a. 传感器在HomeAssistant下定义；
-		b. 由于Homekit不能定时触发事件，HomeAssistant提供Homekit Bridge定时触发Homekit的自动化进程；
-		c. Homekit将传感器的数据送到HomeAsssitant的实体中。
-		
-主要的参考：
-	https://community.home-assistant.io/t/how-to-integrate-homepod-mini-sensors-into-home-assistant-when-direct-integration-isnt-possible/665074/3	    
-		    
-步骤：
-	1. 在configuration.yaml中增加定义boolean；
-	2. 通过Homekit Bridge将boolean传递给Homekit-Boolean-in-HomeKit.png;
-	3. 定义传感器；
-	4. 设置HomeAssitant下的自动化：timer_to_homekit；
-	5. 从HomeAssistant获取授权的长效Token；
-	4. 设置Homekit的自动化进程-auomation_1.png到automation_4.png
-	
-Homekit设置说明：
-	1. HomeKit Bridge设置的Boolean为触发器；
-	2. 在Home App下的自动化直接编程，不需要单独的捷径，这样iPhone不参与数据的更新；
-	3. 获得的数据类型可以选择，需要选择为数字类型，这样可以统计，追寻历史；
-	4. attributes下的项目是：device_class, state_class, unit_of_measurement, friendly_name和icon。
-	5. POST的头设置：Authorization，Bearer xxxxxxxxxxxxxxxx(HomeAssistant的token)
+概述
+我入坑Homeassistant已经一年有余，系统搭建已经相当完整。它即给我带来前所未有的方便，也带来非常多的乐趣。网站在初期给了我非常多的帮助，各路大神帖子不仅给我各种新颖的方法，也为我的编程提供了很多的帮助。我也希望能够回馈论坛，希望我的总结能够为新手提供一定的帮助。
+我的总结准备分以下的部分，具体说明了我的系统的构成，总结我的经验和教训。由于我的系统不可能覆盖不同类型的硬件，也不可能涵盖所有的功能和设置，完全基于我自身的需求考虑，水平有限，难免有很多的不足。仅供参考！
+        * 系统构成，网关的选择建议和说明
+        * 界面设计，日历，天气等基本功能设置
+        * ESPHOME，Picooc，小米温度计和落地灯等BLE设备
+        * Zigbee，Z2M/ZHA/Z2T的选择
+        * TCP/IP网络设备，巧用EW11等
+        * NodeRed
+        * 为什么要用MQTT？
+        * 围栏设置和人体监测
+        * HomePod，完美的音乐+语音控制+TTS
+        * 电视，和Apple TV的完美组合
+        * UIOT流氓设备的替代
+        * 电子秤数据
+        * 空调的MQTT实现，模式设置
+        * 电视的组合设置（小米+Apple TV）
+        * 杜亚窗帘485连接
+        * 南方电网数据
+        * 凯迪仕智能锁
+        * 12123数据跟踪
+        * 海康摄像头
+        * 联通数据跟踪
+        * 自动化一，HomePod传感器读取
+        * 自动化二，Good Morning/Evening
+        * 自动化二，空调的不同模式，舒适/节能/睡觉
+        * 自动化三，电视的语音控制
+        * 自动化四，音乐播放睡眠定时
+        * 自动化五，警报的处理	5. POST的头设置：Authorization，Bearer xxxxxxxxxxxxxxxx(HomeAssistant的token)
