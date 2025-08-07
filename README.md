@@ -6,29 +6,30 @@
 
 还有一点事先说明，我不分享UI的设计，如果有需要的伙伴，可以在Hassbian或者Bilibili上搜，有不少的大佬有很不错的分享，如：Frankiesmall, koryking等。
    1. [系统构成](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/System%20Composed.md)（网关的选择建议和说明）
-   2. [界面设计](https://github.com/lifeexplore/Homeassistant-Project/tree/Homeassistant-Project/Dashboard)：日历，天气等基本功能设置
-   3. ESPHOME，Picooc，小米温度计和落地灯等BLE设备
-   4. Zigbee，Z2M/ZHA/Z2T的选择
-   5. TCP/IP网络设备，巧用EW11等
-   6. NodeRed
-   7. 为什么要用MQTT？
-   8. 围栏设置和人体监测
-   9. [读取HomePod传感器数据](https://github.com/lifeexplore/Homeassistant-Project/tree/Homeassistant-Project/Connect-HomePod-Sensors)
-   10. HomePod，完美的音乐+语音控制+TTS
-   11. 电视，和Apple TV的完美组合
-   12. UIOT所谓Zigbee设备的替代
-   13. 电子秤连接
-   14. 空调的MQTT实现，模式设置
-   15. 电视的组合设置（小米+Apple TV）
-   16. 杜亚窗帘485连接
-   17. 电网数据
-   18. 智能锁连接
-   19. 12123数据跟踪
-   20. 摄像头连接
-   21. 手机无线数据跟踪
-   22. 自动化一，Good Morning/Evening
-   23. 自动化二，空调的不同模式，舒适/节能/睡觉
-   24. 自动化三，电视的语音控制
-   25. 自动化四，音乐播放睡眠定时
-   26. 自动化五，警报的处理
-   27. AI的使用
+   2. 集成列表
+   3. [界面设计](https://github.com/lifeexplore/Homeassistant-Project/tree/Homeassistant-Project/Dashboard)：日历，天气等基本功能设置
+   4. ESPHOME，Picooc，小米温度计和落地灯等BLE设备
+   5. Zigbee，Z2M/ZHA/Z2T的选择
+   6. TCP/IP网络设备，巧用EW11等
+   7. NodeRed
+   8. 为什么要用MQTT？
+   9. 围栏设置和人体监测
+   10. [读取HomePod传感器数据](https://github.com/lifeexplore/Homeassistant-Project/tree/Homeassistant-Project/Connect-HomePod-Sensors)
+   11. HomePod，完美的音乐+语音控制+TTS
+   12. 电视，和Apple TV的完美组合
+   13. UIOT所谓Zigbee设备的替代
+   14. 电子秤连接
+   15. 空调的MQTT实现，模式设置
+   16. 电视的组合设置（小米+Apple TV）
+   17. 杜亚窗帘485连接
+   18. 电网数据
+   19. 智能锁连接
+   20. 12123数据跟踪
+   21. 摄像头连接
+   22. 手机无线数据跟踪
+   23. 自动化一，Good Morning/Evening
+   24. 自动化二，空调的不同模式，舒适/节能/睡觉
+   25. 自动化三，电视的语音控制
+   26. 自动化四，音乐播放睡眠定时
+   27. 自动化五，警报的处理
+   28. AI的使用
