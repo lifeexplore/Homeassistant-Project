@@ -1,0 +1,105 @@
+type: state-icon
+style:
+  left: 90%
+  top: 87%
+icon: mdi:webcam
+title: 摄像头
+entity: camera.hikvision_mainstream
+tap_action:
+  action: fire-dom-event
+  browser_mod:
+    service: browser_mod.popup
+    data:
+      size: classic
+      content:
+        type: custom:webrtc-camera
+        entity: camera.hikvision_mainstream
+        mode: webrtc,webrtc/tcp,mse,hls,mjpeg
+        media: video,audio
+        muted: true
+        intersection: 0.75
+        background: true
+        ui: true
+        style: |-
+          .shortcuts {
+            top: unset; 
+            left: unset; 
+            right: 10px; 
+            bottom: 5px; 
+            display: flex;
+            gap: 10px;
+            flex-direction: row
+          }     
+          .mode {display: none}
+          .pictureinpicture {display: none}
+        ptz:
+          service: onvif.ptz
+          data_left:
+            distance: 0.05
+            entity_id: camera.hikvision_mainstream
+            pan: LEFT
+          data_right:
+            distance: 0.05
+            entity_id: camera.hikvision_mainstream
+            pan: RIGHT
+          data_up:
+            distance: 0.05
+            entity_id: camera.hikvision_mainstream
+            tilt: UP
+          data_down:
+            distance: 0.05
+            entity_id: camera.hikvision_mainstream
+            tilt: DOWN
+          data_zoom_in:
+            distance: 0.05
+            entity_id: camera.hikvision_mainstream
+            zoom: ZOOM_IN
+          data_zoom_out:
+            distance: 0.05
+            entity_id: camera.hikvision_mainstream
+            zoom: ZOOM_OUT
+        shortcuts:
+          - name: 自动对焦
+            icon: >-
+              ${ states['switch.hikvision_autofocus'].state === 'on' ?
+              'mdi:focus-auto':'mdi:blur'}
+            service: switch.turn_on
+            service_data:
+              entity_id: switch.hikvision_autofocus
+          - name: 红外灯
+            icon: >-
+              ${ states['switch.hikvision_ir_lamp'].state === 'on' ?
+              'mdi:spotlight-beam':'mdi:spotlight'}
+            service: switch.toggle
+            service_data:
+              entity_id: switch.hikvision_ir_lamp
+          - name: 1
+            icon: mdi:numeric-1-circle
+            service: onvif.ptz
+            service_data:
+              distance: 0.5
+              speed: 0.1
+              continuous_duration: 0.5
+              move_mode: GotoPreset
+              preset: 1
+              entity_id: camera.hikvision_mainstream
+          - name: 2
+            icon: mdi:numeric-2-circle
+            service: onvif.ptz
+            service_data:
+              distance: 0.5
+              speed: 0.1
+              continuous_duration: 0.5
+              move_mode: GotoPreset
+              preset: 2
+              entity_id: camera.hikvision_mainstream
+          - name: 3
+            icon: mdi:numeric-3-circle
+            service: onvif.ptz
+            service_data:
+              distance: 0.5
+              speed: 0.1
+              continuous_duration: 0.5
+              move_mode: GotoPreset
+              preset: 3
+              entity_id: camera.hikvision_mainstream
