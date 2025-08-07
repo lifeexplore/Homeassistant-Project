@@ -3,5 +3,5 @@
 * 手机电量
 * iPad电量
 * 手机无线流量：点击为[合约数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Person/Chicom.png)
-* 体重：点击为身体数据
+* 体重：点击为[身体数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Person/Body.png)
 * 在家状态
