@@ -1,0 +1,47 @@
+type: custom:button-card
+card-mod:
+  style: |
+    :host {
+    margin: -1% 0px -1% 0px;
+    }
+styles:
+  grid:
+    - grid-template-areas: |
+        "date week time"
+    - grid-template-columns: 2fr 1fr 1fr
+    - text-align: center
+    - font-weight: bold
+    - font-size: 23px
+  card:
+    - height: 38px
+  custom_fields:
+    time:
+      - text-align: center
+    day:
+      - text-align: center
+custom_fields:
+  time: "[[[return states['sensor.time'].state]]]"
+  date: |
+    [[[
+       let date = new Date(), year = date.getYear()+1900, month = date.getMonth()+1, day = date.getDate();
+       if (month < 10) month = `0${month}` ;
+       if (day   < 10) day   = `0${day}` ;
+       return `${year}年${month}月${day}日`;
+    ]]]
+  week: |
+    [[[
+        var day  = new Date().getDay();
+        var week = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六")[day]
+        return week;
+    ]]]
+theme: ios-light-mode
+tap_action:
+  action: fire-dom-event
+  browser_mod:
+    service: browser_mod.popup
+    data:
+      size: classic
+      content:
+        type: iframe
+        url: http://10.0.0.100:8005/  #https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Calendar.md        
+        aspect_ratio: 124%
