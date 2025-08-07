@@ -9,6 +9,7 @@
   * [Tasmota](https://www.home-assistant.io/integrations/tasmota)
   * [Edge TTS](https://github.com/hasscc/hass-edge-tts)
   * [Xiaomi Miot Auto](https://github.com/al-one/hass-xiaomi-miot)
+  * [Tuya](https://www.home-assistant.io/integrations/tuya)
   * [Onvif](https://www.home-assistant.io/integrations/onvif)
   * [Mushroom](https://github.com/piitaya/lovelace-mushroom)
   * [mini-graph-card](https://github.com/kalkih/mini-graph-card)
