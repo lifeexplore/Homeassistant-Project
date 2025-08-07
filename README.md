@@ -6,7 +6,7 @@
 
 还有一点事先说明，我不分享UI的设计，如果有需要的伙伴，可以在Hassbian或者Bilibili上搜，有不少的大佬有很不错的分享，如：Frankiesmall, koryking等。
    1. [系统构成](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/System%20Composed.md)（网关的选择建议和说明）
-   2. 集成列表
+   2. [集成列表](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/integrations.md)
    3. [界面设计](https://github.com/lifeexplore/Homeassistant-Project/tree/Homeassistant-Project/Dashboard)：日历，天气等基本功能设置
    4. ESPHOME，Picooc，小米温度计和落地灯等BLE设备
    5. Zigbee，Z2M/ZHA/Z2T的选择
