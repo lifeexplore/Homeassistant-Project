@@ -1,7 +1,3 @@
-方案选择：
-  * 和风：准确性较差，界面较单调
-  * 彩云：界面漂亮，要收费
+![calendar](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/calendar.png)
 
-我的方案：
-  * 界面：兼容彩云
-    ![weather](
+源码
