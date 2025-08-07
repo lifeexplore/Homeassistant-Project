@@ -1,5 +1,6 @@
 集成：
   * [HACS](https://github.com/hacs/integration)
+  * [Sun](https://www.home-assistant.io/integrations/sun)
   * [Xiaomi Miot Auto](https://github.com/al-one/hass-xiaomi-miot)
   * [Mushroom](https://github.com/piitaya/lovelace-mushroom)
   * [mini-graph-card](https://github.com/kalkih/mini-graph-card)
