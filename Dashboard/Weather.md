@@ -3,6 +3,9 @@
   * 彩云：界面漂亮，要收费
 
 我的方案：
-  * [界面](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/weather.png)：兼容彩云
+  * 界面：兼容彩云
+
+   ![weather](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/weather.png)
+   
   * 源：https://github.com/hasscc/tianqi
   * 天气预警
