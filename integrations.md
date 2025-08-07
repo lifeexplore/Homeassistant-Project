@@ -6,6 +6,7 @@
   * [Apple TV](https://www.home-assistant.io/integrations/apple_tv)
   * [Homekit Bridge](https://www.home-assistant.io/integrations/homekit)
   * [MQTT](https://www.home-assistant.io/integrations/mqtt)
+  * [Tasmota](https://www.home-assistant.io/integrations/tasmota)
   * [Edge TTS](https://github.com/hasscc/hass-edge-tts)
   * [Xiaomi Miot Auto](https://github.com/al-one/hass-xiaomi-miot)
   * [Onvif](https://www.home-assistant.io/integrations/onvif)
