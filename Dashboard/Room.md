@@ -2,7 +2,7 @@
 
 * 温度，点击打开[青萍](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/Qingping.png)
 * 湿度，点击打开[青萍](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/Qingping.png)
-* HomePod
+* [HomePod](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/HomePod.png)
 * 电视
 * 灯
 * 空调
