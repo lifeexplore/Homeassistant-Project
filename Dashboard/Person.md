@@ -2,6 +2,6 @@
 * 头像：点击为[体重曲线](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Person/weight.png)
 * 手机电量
 * iPad电量
-* 手机无线流量：点击为合约数据
+* 手机无线流量：点击为[合约数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Person/Chicom.png)
 * 体重：点击为身体数据
 * 在家状态
