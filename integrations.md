@@ -5,6 +5,7 @@
   * [Mobile App](https://www.home-assistant.io/integrations/mobile_app)
   * [Apple TV](https://www.home-assistant.io/integrations/apple_tv)
   * [Homekit Bridge](https://www.home-assistant.io/integrations/homekit)
+  * [Edge TTS](https://github.com/hasscc/hass-edge-tts)
   * [Xiaomi Miot Auto](https://github.com/al-one/hass-xiaomi-miot)
   * [Mushroom](https://github.com/piitaya/lovelace-mushroom)
   * [mini-graph-card](https://github.com/kalkih/mini-graph-card)
