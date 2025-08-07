@@ -3,10 +3,10 @@ style:
   left: 12%
   top: 92%
 title: 天气
-entity: binary_sensor.sanya_warning
+entity: binary_sensor.home_warning
 conditions:
   - condition: state
-    entity: binary_sensor.sanya_warning
+    entity: binary_sensor.home_warning
     state: "on"
 tap_action:
   action: fire-dom-event
@@ -26,7 +26,7 @@ tap_action:
             }         
         content: >-
           <h2><ha-alert alert-type="error">
-          {{states.binary_sensor.sanya_warning.attributes.alarms[0].title}}
+          {{states.binary_sensor.home_warning.attributes.alarms[0].title}}
           </ha-alert></h2>
-          {{states.binary_sensor.sanya_warning.attributes.alarms[0].description}}
-          详见: {{states.binary_sensor.sanya_warning.attributes.alarms[0].link}}
+          {{states.binary_sensor.home_warning.attributes.alarms[0].description}}
+          详见: {{states.binary_sensor.home_warning.attributes.alarms[0].link}}
