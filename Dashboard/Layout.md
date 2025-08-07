@@ -1,7 +1,7 @@
 ![layout](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/layout.png)
 
 * [空调](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/AC.yaml) - 动画/开关
-* 摄像头
+* [摄像头](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/camera.png) - WebRTC，
 * HomePod
 * 窗帘 - 开关
 * 户门
