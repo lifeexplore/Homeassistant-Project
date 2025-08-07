@@ -8,6 +8,7 @@
   * [MQTT](https://www.home-assistant.io/integrations/mqtt)
   * [Edge TTS](https://github.com/hasscc/hass-edge-tts)
   * [Xiaomi Miot Auto](https://github.com/al-one/hass-xiaomi-miot)
+  * [Onvif](https://www.home-assistant.io/integrations/onvif)
   * [Mushroom](https://github.com/piitaya/lovelace-mushroom)
   * [mini-graph-card](https://github.com/kalkih/mini-graph-card)
   * [button-card](https://github.com/custom-cards/button-card)
