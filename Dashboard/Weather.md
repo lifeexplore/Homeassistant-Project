@@ -8,4 +8,4 @@
    ![weather](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Weather/weather.png)
    
   * 源：https://github.com/hasscc/tianqi
-  * 天气预警可以显示在平面图中，见[源码](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/warning.yaml)
+  * 天气预警可以显示在平面图中，见[源码](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Weather/warning.yaml)
