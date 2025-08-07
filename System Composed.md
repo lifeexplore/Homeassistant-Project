@@ -7,17 +7,15 @@
 
 Zigbee网关：
 
-* 硬件：藏机
+* 硬件：[藏机](https://www.zigbee.cc)
 * 连接：Wifi
-* OS：Tasmota
-
+* OS：[Tasmota](https://tasmota.github.io/docs/)
 
 BLE：
 
-* 硬件：USB Dongle
+* 硬件：USB Dongle(淘宝¥20左右）
 * 连接：USB
-* OS：ESPHome
-
+* OS：[ESPHome](https://esphome.io)
 
 语音和音乐：
 
@@ -27,7 +25,7 @@ BLE：
 
 电视：
 
-* 硬件：小米+Apple TV+HomePod
+* 硬件：小米 + Apple TV + HomePod
 * 连接：HDMI(eARC)
 
 
@@ -37,4 +35,4 @@ BLE：
 3. 建议一定要解决语言的问题，HASS是国外开发的软件平台，完全汉化不现实。
 4. 多摸网关不建议使用，BLE和Zigbee会有干扰，带来稳定性问题。
 5. 专用网关（如小米，涂鸦，SONOFF等）慎用。因为你需要完全依赖HACS中的集成来驱动，功能无法完全保证。
-6. HomePod+Apple Music和HASS是最佳的组合，其它国内音箱的驱动都无法与之相比。
+6. HomePod + Apple Music和HASS是最佳的组合，其它国内音箱的驱动都无法与之相比。
