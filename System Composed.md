@@ -16,7 +16,7 @@ BLE：
 
 * 硬件：USB Dongle
 * 连接：USB
-* OS: ESPHome
+* OS：ESPHome
 
 
 语音和音乐：
