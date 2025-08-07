@@ -22,7 +22,7 @@
   3. [定义传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/sensor.yaml)
   4. 设置HomeAssitant下的自动化：[timer_to_homekit](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/timer_to_homekit.yaml)
   5. 从HomeAssistant获取授权的长效Token
-  4. 设置Homekit的自动化进程-auomation_1.png到automation_4.png
+  4. 设置Homekit的自动化进程：auomation_1，automation_2，automation_3, automation_4
 	
 Homekit设置说明：
   1. HomeKit Bridge设置的Boolean为触发器
