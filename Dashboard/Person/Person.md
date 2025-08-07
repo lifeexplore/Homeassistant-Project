@@ -1,7 +1,0 @@
-![person](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/person.png)
-* 头像：点击为体重曲线
-* 手机电量
-* iPad电量
-* 手机无线流量：点击为合约数据
-* 体重：点击为身体数据
-* 在家状态
