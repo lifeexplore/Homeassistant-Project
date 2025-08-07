@@ -3,4 +3,4 @@
 * [日历](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Calendar.md)
 * [人员卡片](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Person.md)
 * 房间卡片
-* 平面图	
+* [平面图](https://github.com/lifeexplore/Homeassistant-Project/edit/Homeassistant-Project/Dashboard/Layout.md)
