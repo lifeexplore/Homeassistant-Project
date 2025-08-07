@@ -11,6 +11,7 @@
   * [Xiaomi Miot Auto](https://github.com/al-one/hass-xiaomi-miot)
   * [Tuya](https://www.home-assistant.io/integrations/tuya)
   * [Onvif](https://www.home-assistant.io/integrations/onvif)
+  * [WebRTC](https://github.com/AlexxIT/WebRTC)
   * [Mushroom](https://github.com/piitaya/lovelace-mushroom)
   * [mini-graph-card](https://github.com/kalkih/mini-graph-card)
   * [button-card](https://github.com/custom-cards/button-card)
