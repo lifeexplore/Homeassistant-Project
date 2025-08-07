@@ -6,4 +6,4 @@
 * 窗帘 - 开关
 * 户门
 * 电量
-* 天气预警
+* 天气预警，[源码](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Weather/warning.yaml)
