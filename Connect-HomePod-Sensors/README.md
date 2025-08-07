@@ -20,7 +20,7 @@
   1. 在configuration.yaml中增加定义[boolean](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/boolean.yaml)
   2. 通过Homekit Bridge将boolean传递给[Boolean-in-HomeKit](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Boolean-in-HomeKit%20.png)
   3. [定义传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/sensor.yaml)
-  4. 设置HomeAssitant下的自动化：timer_to_homekit
+  4. 设置HomeAssitant下的自动化：[timer_to_homekit](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/timer_to_homekit.yaml)
   5. 从HomeAssistant获取授权的长效Token
   4. 设置Homekit的自动化进程-auomation_1.png到automation_4.png
 	
