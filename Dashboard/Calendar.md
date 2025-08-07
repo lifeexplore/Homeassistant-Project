@@ -1,32 +1,6 @@
-目的：将HomePod的温度和湿度传感器数据实时传入HomeAssistant
+方案选择：
+  * 和风：准确性较差，界面较单调
+  * 彩云：界面漂亮，要收费
 
-说明：由于本人的HomeAssistant是安装在Docker上，如果是其它方式安装的，可能需要一些必要的修改
-
-需要的平台：
-  1. HomeAssistant
-  2. IOS可以需要16以上
-	
-原理：
-  1. 由于IOS的不开放，不可能从其它的软件访问IOS内部的数据，也不可能直接放访问HomePod获得数据，因此只能定时由IOS将数据送给HomeAssistant。
-  2. 分工：
-	a. 传感器在HomeAssistant下定义；
-	b. 由于Homekit不能定时触发事件，HomeAssistant提供Homekit Bridge定时触发Homekit的自动化进程；
-	c. Homekit将传感器的数据送到HomeAsssitant的实体中。
-		
-主要的参考：
-  https://community.home-assistant.io/t/how-to-integrate-homepod-mini-sensors-into-home-assistant-when-direct-integration-isnt-possible/665074/3	    
-		    
-步骤：
-  1. 在configuration.yaml中增加定义[boolean](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/boolean.yaml)
-  2. 通过Homekit Bridge将boolean传递给[Boolean-in-HomeKit](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Boolean-in-HomeKit%20.png)
-  3. [定义传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/sensor.yaml)
-  4. 设置HomeAssitant下的自动化：[timer_to_homekit](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/timer_to_homekit.yaml)
-  5. 从HomeAssistant获取授权的长效Token
-  4. 设置Homekit的自动化进程：[automation_1](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_1.png)，[automation_2](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_2.png)，[automation_3](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_3.png)，[automation_4](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_4.png)
-     
-Homekit设置说明：
-  1. HomeKit Bridge设置的Boolean为触发器
-  2. 在Home App下的自动化直接编程，不需要单独的捷径，这样iPhone不参与数据的更新
-  3. 获得的数据类型可以选择，需要选择为数字类型，这样可以统计，追寻历史
-  4. attributes下的项目是：device_class, state_class, unit_of_measurement, friendly_name和icon。
-  5. POST的头设置：Authorization，Bearer xxxxxxxxxxxxxxxx(HomeAssistant的token)
+我的方案：
+  * 界面：兼容彩云
