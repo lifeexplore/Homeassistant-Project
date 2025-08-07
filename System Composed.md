@@ -1,9 +1,9 @@
 主机：
 
 * 硬件：AMDx86小主机，4网口，2USB，HDMI等
-* OS：[OpenWrt](https://github.com/lifeexplore/OpenWrt-Setup)，Docker+[samba](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/Samba%20Setup)+[NetBird](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/NetBird%20Setup)
-* 网络连接：旁路由+[OpenClash](https://github.com/lifeexplore/OpenClash-Auxiliary-Files)
-* Docker容器：NodeRed+ESPHome+Mosquitto+Portainer+HomeAssistant+Subconverter+Calendar
+* OS：[OpenWrt](https://github.com/lifeexplore/OpenWrt-Setup)，[Docker](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/Docker) + [samba](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/Samba%20Setup) + [NetBird](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/NetBird%20Setup)
+* 网络连接：旁路由 + [OpenClash](https://github.com/lifeexplore/OpenClash-Auxiliary-Files)
+* Docker容器：NodeRed + ESPHome + Mosquitto + Portainer + HomeAssistant + Subconverter + Calendar
 
 
 Zigbee网关：
