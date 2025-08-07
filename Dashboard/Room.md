@@ -6,4 +6,4 @@
 * [电视](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/TV.png) - Universal Media Player
 * 灯
 * [空调](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/AC.png) - [Simple Thermostat](https://github.com/nervetattoo/simple-thermostat)
-* [窗帘](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/curtain.png)
+* [窗帘](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/curtain.png) - Mushroom Cover Card
