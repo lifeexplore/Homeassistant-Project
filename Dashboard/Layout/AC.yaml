@@ -1,0 +1,30 @@
+type: state-icon
+entity: switch.ac_living
+style:
+  left: 42%
+  top: 50%
+title: 客厅空调
+tap_action:
+  action: toggle
+card_mod:
+  style:
+    state-badge:
+      $:
+        ha-state-icon:
+          $:
+            ha-icon:
+              $: |
+                ha-svg-icon {
+                  animation: 
+                    {% if (states.switch.ac_living.state!='off') %} 
+                    rotation 1.8s linear infinite 
+                    {% endif %};                            
+                  }
+                  @keyframes rotation {
+                    0% {
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      transform: rotate(360deg);
+                    }
+                  }
