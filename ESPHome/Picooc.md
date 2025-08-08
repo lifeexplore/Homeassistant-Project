@@ -14,7 +14,7 @@
       |头    |时间戳      |体重   | 阻抗
   
 * 不同时间的产品有可能有区别，请自行抓包并修改程序
-* 体重换算乘0.05
+* 体重换算系数0.05
 * 阻抗换算系数可以自行调整，0.125是比较了APP数据取的近似值
 * [源码](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/esp32.yaml)
 * 可以通过[小米体重秤](https://github.com/dckiller51/bodymiscale)获得进一步的数据，并且通过[卡片](https://github.com/dckiller51/lovelace-body-miscale-card?tab=readme-ov-file)输出[身体数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Person/Body.png)和[体重曲线](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Person/weight.png)
