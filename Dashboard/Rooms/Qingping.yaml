@@ -37,20 +37,20 @@ custom_fields:
           cards:
             - type: custom:mini-graph-card
               entities:
-                - sensor.livingroom_temperature
+                - sensor.esp32_qingping_temperature
               show_icon: true
             - type: custom:mini-graph-card
               entities:
-                - sensor.esp32l_qingping_humidity
+                - sensor.esp32_qingping_humidity
               show_icon: true
         - type: horizontal-stack
           cards:
             - type: custom:mini-graph-card
               entities:
-                - sensor.esp32l_qingping_co2
+                - sensor.esp32_qingping_co2
               show_icon: true
             - type: custom:mini-graph-card
               entities:
-                - sensor.esp32l_qingping_pm2_5
-                - sensor.esp32l_qingping_pm10
+                - sensor.esp32_qingping_pm2_5
+                - sensor.esp32_qingping_pm10
               show_icon: true	
