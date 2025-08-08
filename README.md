@@ -9,7 +9,7 @@
    2. [集成列表](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/integrations.md)
    3. [仪表盘](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout.md)：日历，天气等基本功能设置
    4. [ESPHOME](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/README.md)：Picooc，青萍/小米温度计和Smart Light等BLE设备
-   5. Zigbee
+   5. [Zigbee](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Zigbee/README.md)
    6. TCP/IP网络设备，巧用EW11等
    7. NodeRed
    8. 为什么要用MQTT？
