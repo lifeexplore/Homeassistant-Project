@@ -8,7 +8,7 @@
    1. [系统构成](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/System%20Composed.md)（网关的选择建议和说明）
    2. [集成列表](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/integrations.md)
    3. [界面设计](https://github.com/lifeexplore/Homeassistant-Project/tree/Homeassistant-Project/Dashboard)：日历，天气等基本功能设置
-   4. [ESPHOME](https://github.com/lifeexplore/Homeassistant-Project/tree/Homeassistant-Project/ESPHome)：Picooc，小米温度计和Smart Light等BLE设备
+   4. [ESPHOME](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/README.md)：Picooc，小米温度计和Smart Light等BLE设备
    5. Zigbee，Z2M/ZHA/Z2T的选择
    6. TCP/IP网络设备，巧用EW11等
    7. NodeRed
