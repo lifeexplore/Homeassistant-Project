@@ -30,11 +30,8 @@ captive_portal:
 #improv_serial:
   
 external_components:
-  - source: github://myhomeiot/esphome-components
-  - source: github://aronsky/esphome-components
   - source: github://dentra/esphome-components
-#    components: [qingping, codegen]  
-#  - source: my components
+#    components: [qingping, codegen]
 
 #bluetooth_proxy:
 
