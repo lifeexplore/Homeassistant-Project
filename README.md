@@ -14,7 +14,7 @@
    7. TCP/IP网络设备，巧用EW11等
    8. NodeRed
    9. 为什么要用MQTT？
-   10. [读取HomePod传感器数据(https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/README.md)
+   10. [读取HomePod传感器数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/README.md)
    11. HomePod，完美的音乐+语音控制+TTS
    12. 电视，和Apple TV的完美组合
    13. UIOT所谓Zigbee设备的替代
