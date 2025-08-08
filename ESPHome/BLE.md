@@ -4,7 +4,7 @@
     * [ESP32](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/ESP32.png)：便宜，部署方便(USB/Wifi)
 * ESPHome中的BLE：[BLE Gateway](https://github.com/myhomeiot/esphome-components#ble-gateway)，[BLE Monitor](https://custom-components.github.io/ble_monitor/Installation)
 * [抓包BLE](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/sniff%20BLE.md) 
-* 青萍传感器
+* [青萍传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/Qingping.md)
 * 小米温度/湿度传感器
 * Smart Light灯具
 * Picooc电子秤
