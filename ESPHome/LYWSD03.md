@@ -1,7 +1,10 @@
-主要部件：
-* BLE设备访问
-* 抓包BLE
-* Picooc电子秤
-* 青萍传感器
-* 小米温度/湿度传感器
-* Smart Light灯具
+    #LYWSD03
+      - platform: xiaomi_lywsd03mmc
+        mac_address: xx:xx:xx:xx:xx:xx
+        bindkey: 'xxxxxxxxxxxxxxxxxxxxxxxxx'
+        temperature: 
+          name: 'LYWSD03 Temperature'
+        humidity: 
+          name: 'LYWSD03 Humidity'
+        battery_level: 
+          name: 'LYSWD03 Battery'
