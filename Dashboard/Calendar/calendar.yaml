@@ -43,5 +43,5 @@ tap_action:
       size: classic
       content:
         type: iframe
-        url: http://10.0.0.100:8005/  #https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Calendar.md        
+        url: http://10.0.0.100:xxxx/  #https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Calendar.md        
         aspect_ratio: 124%
