@@ -3,11 +3,11 @@
     * [ESPHome](https://esphome.io)：编程容易，扩展性很好
     * [ESP32](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/ESP32.png)：便宜，部署方便(USB/Wifi)
 * [抓包BLE](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/sniff%20BLE.md)
-* Picooc电子秤
 * 青萍传感器
 * 小米温度/湿度传感器
 * Smart Light灯具
-
+* Picooc电子秤
+  
 注意的问题：
 * HASS可以直接访问BLE设备，但是实时性和编程性都不好，建议用ESPHome。如：青萍和小米的温度/湿度传感器
 * 另外，分布控制可以减少程序的互扰，编程更加的清晰，可靠
