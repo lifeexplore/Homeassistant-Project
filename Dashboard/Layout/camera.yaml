@@ -73,7 +73,7 @@ tap_action:
             service: switch.toggle
             service_data:
               entity_id: switch.hikvision_ir_lamp
-          - name: 1
+          - name: 预设1
             icon: mdi:numeric-1-circle
             service: onvif.ptz
             service_data:
@@ -83,7 +83,7 @@ tap_action:
               move_mode: GotoPreset
               preset: 1
               entity_id: camera.hikvision_mainstream
-          - name: 2
+          - name: 预设2
             icon: mdi:numeric-2-circle
             service: onvif.ptz
             service_data:
@@ -93,7 +93,7 @@ tap_action:
               move_mode: GotoPreset
               preset: 2
               entity_id: camera.hikvision_mainstream
-          - name: 3
+          - name: 预设3
             icon: mdi:numeric-3-circle
             service: onvif.ptz
             service_data:
