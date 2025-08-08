@@ -6,7 +6,7 @@
 * [抓包BLE](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/sniff%20BLE.md) 
 * [青萍传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/Qingping.md)
 * [小米温度/湿度传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/LYWSD03.md)
-* Smart Light灯具
+* Smart Light灯具：https://github.com/aronsky/esphome-components
 * Picooc电子秤
   
 注意的问题：
