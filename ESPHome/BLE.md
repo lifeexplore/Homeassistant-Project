@@ -1,4 +1,4 @@
-主要部件：
+说明：
 * BLE设备 - 廉价，部署方便(电池)
     * [ESPHome](https://esphome.io)：编程容易，扩展性很好
     * [ESP32](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/ESP32.png)：便宜，部署方便(USB/Wifi)
