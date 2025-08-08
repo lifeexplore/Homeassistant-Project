@@ -1,56 +1,56 @@
-              type: custom:button-card
-              card-mod:
-                style: |
-                  :host {
-                  margin: -1% 0px -1% 0px;
-                  }
-              show_entity_picture: true
-              entity_picture: /local/icon/qingping.png
-              size: 20%
-              tap_action:
-                action: null
-              entity: qingping
-              show_state: false
-              show_name: false
-              styles:
-                grid:
-                  - grid-template-areas: "\"i\" \"n\" \"data\""
-                  - grid-template-columns: 1fr
-                  - grid-template-rows: 1fr 0.3fr min-content
-                card:
-                  - border-radius: 20px
-                icon:
-                  - position: relative
-                  - left: 0%
-                  - top: "-5%"
-                custom_fields:
-                  data:
-                    - position: relative
-                    - left: 0%
-                    - top: 0%
-              custom_fields:
-                data:
-                  card:
-                    type: vertical-stack
-                    cards:
-                      - type: horizontal-stack
-                        cards:
-                          - type: custom:mini-graph-card
-                            entities:
-                              - sensor.livingroom_temperature
-                            show_icon: true
-                          - type: custom:mini-graph-card
-                            entities:
-                              - sensor.esp32l_qingping_humidity
-                            show_icon: true
-                      - type: horizontal-stack
-                        cards:
-                          - type: custom:mini-graph-card
-                            entities:
-                              - sensor.esp32l_qingping_co2
-                            show_icon: true
-                          - type: custom:mini-graph-card
-                            entities:
-                              - sensor.esp32l_qingping_pm2_5
-                              - sensor.esp32l_qingping_pm10
-                            show_icon: true	
+type: custom:button-card
+card-mod:
+  style: |
+    :host {
+    margin: -1% 0px -1% 0px;
+    }
+show_entity_picture: true
+entity_picture: /local/icon/qingping.png
+size: 20%
+tap_action:
+  action: null
+entity: qingping
+show_state: false
+show_name: false
+styles:
+  grid:
+    - grid-template-areas: "\"i\" \"n\" \"data\""
+    - grid-template-columns: 1fr
+    - grid-template-rows: 1fr 0.3fr min-content
+  card:
+    - border-radius: 20px
+  icon:
+    - position: relative
+    - left: 0%
+    - top: "-5%"
+  custom_fields:
+    data:
+      - position: relative
+      - left: 0%
+      - top: 0%
+custom_fields:
+  data:
+    card:
+      type: vertical-stack
+      cards:
+        - type: horizontal-stack
+          cards:
+            - type: custom:mini-graph-card
+              entities:
+                - sensor.livingroom_temperature
+              show_icon: true
+            - type: custom:mini-graph-card
+              entities:
+                - sensor.esp32l_qingping_humidity
+              show_icon: true
+        - type: horizontal-stack
+          cards:
+            - type: custom:mini-graph-card
+              entities:
+                - sensor.esp32l_qingping_co2
+              show_icon: true
+            - type: custom:mini-graph-card
+              entities:
+                - sensor.esp32l_qingping_pm2_5
+                - sensor.esp32l_qingping_pm10
+              show_icon: true	
