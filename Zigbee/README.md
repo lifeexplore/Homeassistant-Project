@@ -1,7 +1,5 @@
-主要部件：
-* [BLE设备访问](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/BLE.md)
-* [抓包BLE](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/sniff%20BLE.md)
-* [Picooc电子秤](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/Picooc.md)
-* [青萍传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/Qingping.md)
-* [小米温度/湿度传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/LYWSD03.md)
-* [Smart Light灯具](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/smart%20light.md)
+方案选择：Tasmota
+  * [Zigbee2MQTT](https://www.zigbee2mqtt.io)：Docker安装，资源较多，扩展性一般，控制较困难
+  * [ZHA](https://www.home-assistant.io/integrations/zha/)：HASS直接控制，资源较少，扩展性一般
+  * [Zigbee2Tasmota](https://tasmota.github.io/docs/)：独立运行，资源有限，扩展性和控制性都很好
+
