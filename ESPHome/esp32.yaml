@@ -1,0 +1,134 @@
+
+esp32:
+  board: esp32dev
+  framework:
+    type: esp-idf
+
+# Enable logging
+logger:
+#  level: VERY_VERBOSE
+
+time:
+  - platform: homeassistant
+    id: homeassistant_time 
+    
+# Enable Home Assistant API
+api:
+  custom_services: True
+  encryption:
+    key: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+ota:
+  - platform: esphome
+    password: "xxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+captive_portal:
+
+#improv_serial:
+  
+external_components:
+  - source: github://dentra/esphome-components
+#
+
+substitutions:
+  picooc_mac: 'xx:xx:xx:xx:xx:xx'
+  picooc_name_prefix: Picooc Scale
+  picooc_id_prefix: picooc_scale  
+  picooc_service_uuid: 'fff0'
+  picooc_characteristic_uuid: 'fff2'
+
+#bluetooth_proxy:
+
+esphome:
+  name: esp32
+  friendly_name: ESP32
+  on_loop:
+    then:
+      - lambda: |-
+          if(id(renew).state) {
+            uint32_t ct = id(homeassistant_time).now().timestamp; 
+            uint8_t CMD_DATA[] = {0xf1,0x09,0x3a,(uint8_t)(ct >> 24),(uint8_t)(ct >> 16),(uint8_t)(ct >> 8),(uint8_t)ct, 0xa5, 0x00};
+            auto chr = id(${picooc_id_prefix}).get_characteristic(
+              esp32_ble_tracker::ESPBTUUID::from_raw("${picooc_service_uuid}"), 
+              esp32_ble_tracker::ESPBTUUID::from_raw("${picooc_characteristic_uuid}"));
+            if(chr) chr->write_value(CMD_DATA,sizeof(CMD_DATA));
+            ESP_LOGD("CMD_DATA", ">>> %s", format_hex_pretty(CMD_DATA, sizeof(CMD_DATA)).c_str());          
+            id(renew).publish_state(false);
+          }
+
+esp32_ble_tracker:
+#  scan_parameters:
+#    continuous: True
+
+ble_client:
+  - mac_address: ${picooc_mac}
+    id: ${picooc_id_prefix}
+    auto_connect: true
+    on_connect: [lambda: "id(renew).publish_state(true);"]                                     
+
+#picooc
+  - platform: template
+    id: man_impedance
+    name: man Impedance
+    unit_of_measurement: 'Ω'
+    state_class: measurement
+    accuracy_decimals: 1
+  - platform: template  
+    id: man_weight
+    name: man Weight
+    device_class: weight
+    unit_of_measurement: 'kg'
+    state_class: measurement
+    accuracy_decimals: 1    
+
+  - platform: template
+    id: woman_impedance
+    name: woman Impedance
+    unit_of_measurement: 'Ω'
+    state_class: measurement
+    accuracy_decimals: 0
+  - platform: template  
+    id: woman_weight
+    name: woman Weight
+    device_class: weight
+    unit_of_measurement: 'kg'
+    state_class: measurement
+    accuracy_decimals: 1    
+
+text_sensor:
+#picooc  
+  - platform: ble_client
+    ble_client_id: ${picooc_id_prefix}  
+    id: ${picooc_id_prefix}_renew
+    service_uuid: 'fff0'
+    characteristic_uuid: 'fff1'
+    update_interval: never
+    internal: True
+    notify: True
+    on_notify: 
+      then:
+        lambda: |-
+          ESP_LOGW("Picooc","%s:%d",format_hex_pretty((uint8_t *) x.c_str(),x.size()).c_str(),x.size()); 
+          if (x.size() == 13) {
+            float weight = 0.05*((int)x[6] * 256 + (int)x[7]);
+            float resistance = 0.125*((int)x[8] * 256 + (int)x[9]);        
+            ESP_LOGD("Picooc", "Weight: %.2f kg, Resistance: %f", weight, resistance);
+            if (weight > 70) {
+              id(man_impedance).publish_state(resistance);
+              id(man_weight).publish_state(weight);
+            } else if(weight>45 and weight<60) {
+              id(woman_impedance).publish_state(resistance);
+              id(woman_weight).publish_state(weight);         
+            }
+          } 
+
+binary_sensor:
+#picooc  
+  - platform: template
+    id: renew
+    internal: true
+    disabled_by_default: True
