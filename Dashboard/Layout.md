@@ -5,5 +5,5 @@
 * HomePod
 * 窗帘(开关) - NodeRed
 * [户门](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/frontdoor.png) - NodeRed
-* [电量](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/power.jpg)- NodeRed
+* [电量](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/power.md)- NodeRed
 * [天气预警](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Weather/warning.yaml)
