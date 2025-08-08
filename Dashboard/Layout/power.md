@@ -1,3 +1,3 @@
-![camera](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/camera.png)
+![power](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/power.png)
 
-* [源码](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/camera.yaml) - [Onvif](https://www.home-assistant.io/integrations/onvif)，[WebRTC](https://github.com/AlexxIT/WebRTC)
+* [源码](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/power.yaml) - [Aepxchar](https://www.home-assistant.io/integrations/onvif)
