@@ -2,7 +2,7 @@
 * BLE设备 - 廉价，部署方便(电池)
     * [ESPHome](https://esphome.io)：编程容易，扩展性很好
     * [ESP32](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/ESP32.png)：便宜，部署方便(USB/Wifi)
-* 抓包BLE
+* [抓包BLE](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/sniff%20BLE.md)
 * Picooc电子秤
 * 青萍传感器
 * 小米温度/湿度传感器
