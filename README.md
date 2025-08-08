@@ -12,24 +12,21 @@
    5. [Zigbee](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Zigbee/README.md)
    6. 围栏设置和人体监测
    7. TCP/IP网络设备，巧用EW11等
-   8. NodeRed
-   9. 为什么要用MQTT？
+   8. 为什么要用MQTT？
+   9. 空调的MQTT实现，模式设置
    10. [读取HomePod传感器数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/README.md)
    11. HomePod，完美的音乐+语音控制+TTS
-   12. 电视，和Apple TV的完美组合
-   13. UIOT所谓Zigbee设备的替代
-   14. 电子秤连接
-   15. 空调的MQTT实现，模式设置
-   16. 电视的组合设置（小米+Apple TV）
-   17. 杜亚窗帘485连接
-   18. 电网数据
-   19. 智能锁连接
-   20. 12123数据跟踪
-   21. 摄像头连接
-   22. 手机无线数据跟踪
-   23. 自动化一，Good Morning/Evening
-   24. 自动化二，空调的不同模式，舒适/节能/睡觉
-   25. 自动化三，电视的语音控制
-   26. 自动化四，音乐播放睡眠定时
-   27. 自动化五，警报的处理
-   28. AI的使用
+   12. 电视的组合设置（小米+Apple TV）
+   13. NodeRed
+   14. 杜亚窗帘485连接
+   15. 电网数据
+   16. 智能锁连接
+   17. 12123数据跟踪
+   18. 手机无线数据跟踪
+   19. UIOT所谓Zigbee设备的替代
+   20. 自动化一，Good Morning/Evening
+   21. 自动化二，空调的不同模式，舒适/节能/睡觉
+   22. 自动化三，电视的语音控制
+   23. 自动化四，音乐播放睡眠定时
+   24. 自动化五，警报的处理
+   25. AI的使用
