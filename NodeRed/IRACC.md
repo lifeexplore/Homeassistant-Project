@@ -1,5 +1,6 @@
 ![AC](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/AC.png)
 
+* 参考：https://bbs.hassbian.com/thread-8785-1-1.html
 * IRACC控制器485连接[EW11](http://www.hi-flying.com/elfin-ew10-elfin-ew11)
 * NodeRed控制
 * [Simple Thermostat](https://github.com/nervetattoo/simple-thermostat)卡片
