@@ -7,7 +7,7 @@
 * [青萍传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/Qingping.md)
 * [小米温度/湿度传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/LYWSD03.md)
 * Smart Light灯具：https://github.com/aronsky/esphome-components
-* Picooc电子秤
+* [Picooc电子秤](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/Picooc.md)
   
 注意的问题：
 * HASS可以直接访问BLE设备，但是实时性和编程性都不好，建议用ESPHome。如：青萍和小米的温度/湿度传感器
