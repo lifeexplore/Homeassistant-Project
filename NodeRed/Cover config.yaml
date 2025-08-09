@@ -1,25 +1,25 @@
-      name: "Living Softness"
-      icon: mdi:curtains
-      command_topic: "EW11_ST/CT_2/con"
-      state_topic: "EW11_ST/CT_2/state"
-      value_template: "{{ value_json['state'] }}"
-      position_topic: "EW11_ST/CT_2/state"
-      position_template:  "{{ value_json['position'] }}"  
-      set_position_topic: "EW11_ST/CT_2/set"
-      set_position_template: "{{ position }}"
-      qos: 0
-      retain: false
-      device:
-        identifiers: 
-          - "DOOYA"
-        manufacturer: "DOOYA"
-        model: "DT82TV"  
-        name: "DOOYA"  
-      payload_open: "open"
-      payload_close: "close"
-      payload_stop: "stop"
-      state_open: "open"
-      state_closed: "closed"
-      state_stopped: "stop"
-      optimistic: false
-      unique_id: softness_living 
+name: "Living Softness"
+icon: mdi:curtains
+command_topic: "EW11_ST/CT_2/con"
+state_topic: "EW11_ST/CT_2/state"
+value_template: "{{ value_json['state'] }}"
+position_topic: "EW11_ST/CT_2/state"
+position_template:  "{{ value_json['position'] }}"  
+set_position_topic: "EW11_ST/CT_2/set"
+set_position_template: "{{ position }}"
+qos: 0
+retain: false
+device:
+  identifiers: 
+    - "DOOYA"
+  manufacturer: "DOOYA"
+  model: "DT82TV"  
+  name: "DOOYA"  
+payload_open: "open"
+payload_close: "close"
+payload_stop: "stop"
+state_open: "open"
+state_closed: "closed"
+state_stopped: "stop"
+optimistic: false
+unique_id: softness_living 
