@@ -1,6 +1,6 @@
 特点：
 * 方便将所有设备映射到Apple Home
-* 完美的音乐：便宜，高质量
+* 完美的音乐：Apple Music既便宜，又高质量，而且有Andriot的版本
 * 语音控制
 * TTS：[Edge TTS](https://github.com/hasscc/hass-edge-tts)
 * HASS整合最好的生态
