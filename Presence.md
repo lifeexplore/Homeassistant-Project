@@ -8,4 +8,6 @@
   * 问候语 - Hello + 音乐
 
 人体存在传感器：
-  * SNZB-06P
+  * 客厅：[SNZB-06P](https://support.sonoff.tech/zh-hans/snzb-06p-usermanual/)
+  * 灯光控制：天黑开灯
+  * 早上问候：早上好 + 天气预报 + 音乐
