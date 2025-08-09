@@ -12,7 +12,7 @@
    5. [Zigbee](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Zigbee.md)：Tasmota
    6. [围栏设置和人体监测](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Presence.md)：iPhoneDetect
    7. [TCP/IP网络设备](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/TCP_IP.md)：EW11
-   8. MQTT：空调(climate)的实现，模式设置
+   8. MQTT：空调(climate)的实现/模式设置，窗帘控制
    9. [读取HomePod传感器数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/README.md)
    10. HomePod：完美的音乐+语音控制+TTS
    11. 电视的组合设置：小米 + Apple TV
