@@ -1,81 +1,81 @@
-      type: custom:mushroom-template-card
-      primary: ""
-      secondary: ""
-      icon: cil:apple-homepod-mini
-      icon_color: |-
-        [[[ 
-          if(states['media_player.bedroom'].state == 'playing') 
-          return '#10a0FF'
-          else return 'grey'
-          endif
-        ]]]
-      picture: |
-        {{ states.media_player.bedroom.attributes.entity_picture }} 
-      tap_action:
-        action: fire-dom-event
-        browser_mod:
-          service: browser_mod.popup
+type: custom:mushroom-template-card
+primary: ""
+secondary: ""
+icon: cil:apple-homepod-mini
+icon_color: |-
+  [[[ 
+    if(states['media_player.bedroom'].state == 'playing') 
+    return '#10a0FF'
+    else return 'grey'
+    endif
+  ]]]
+picture: |
+  {{ states.media_player.bedroom.attributes.entity_picture }} 
+tap_action:
+  action: fire-dom-event
+  browser_mod:
+    service: browser_mod.popup
+    data:
+      title: HomePod
+      size: classic
+      content:
+        type: custom:mini-media-player
+        entity: media_player.bedroom
+        artwork: full-cover
+        source: full
+        info: scroll
+        max_volume: 60
+        min_volume: 30
+        replace_mute: play_pause
+        hide:
+          name: true
+          power: true
+          shuffle: false
+          repeat: false
+          play_pause: true
+        tap_action:
+          action: none
+        card_mod:
+          style: |
+            ha-card {
+             background: none;
+             border-radius: 0px;
+             border: none
+            }
+entity: media_player.bedroom
+hold_action:
+  action: fire-dom-event
+  browser_mod:
+    service: browser_mod.popup
+    data:
+      title: HomePod
+      content:
+        type: custom:mini-media-player
+        entity: media_player.bedroom
+        artwork: none
+        source: full
+        info: scroll
+        hide:
+          name: true
+          info: true
+          icon: true
+          power: true
+          prev: true
+          next: true
+          play_pause: true
+          volume: true
+        tap_action:
+          action: none
+        tts:
+          platform: service
           data:
-            title: 次卧HomePod
-            size: classic
-            content:
-              type: custom:mini-media-player
-              entity: media_player.bedroom
-              artwork: full-cover
-              source: full
-              info: scroll
-              max_volume: 60
-              min_volume: 30
-              replace_mute: play_pause
-              hide:
-                name: true
-                power: true
-                shuffle: false
-                repeat: false
-                play_pause: true
-              tap_action:
-                action: none
-              card_mod:
-                style: |
-                  ha-card {
-                   background: none;
-                   border-radius: 0px;
-                   border: none
-                  }
-      entity: media_player.bedroom
-      hold_action:
-        action: fire-dom-event
-        browser_mod:
-          service: browser_mod.popup
-          data:
-            title: 次卧HomePod
-            content:
-              type: custom:mini-media-player
-              entity: media_player.bedroom
-              artwork: none
-              source: full
-              info: scroll
-              hide:
-                name: true
-                info: true
-                icon: true
-                power: true
-                prev: true
-                next: true
-                play_pause: true
-                volume: true
-              tap_action:
-                action: none
-              tts:
-                platform: service
-                data:
-                  service: tts.edge_tts_say
-                volume: +80%
-                cache: true
-      card_mod:
-        style: |
-          ha-card {
-           background: none;
-           border-radius: 0px;
-           border: none
-          }
+            service: tts.edge_tts_say
+          volume: +80%
+          cache: true
+card_mod:
+  style: |
+    ha-card {
+     background: none;
+     border-radius: 0px;
+     border: none
+    }
