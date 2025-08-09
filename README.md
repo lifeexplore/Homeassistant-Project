@@ -11,7 +11,7 @@
    4. [ESPHOME](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/README.md)：Picooc，青萍/小米温度计和Smart Light等BLE设备
    5. [Zigbee](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Zigbee.md)
    6. [围栏设置和人体监测](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Presence.md)
-   7. TCP/IP网络设备，巧用EW11等
+   7. [TCP/IP网络设备](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/TCP_IP.md)
    8. MQTT：空调(climate)的实现，模式设置
    9. [读取HomePod传感器数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/README.md)
    10. HomePod，完美的音乐+语音控制+TTS
