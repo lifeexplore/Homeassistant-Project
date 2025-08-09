@@ -1,55 +1,55 @@
-      name: "AC-Living"
-      modes:
-        - "off"
-        - "fan_only"
-        - "heat"
-        - "cool"
-        - "dry"
-        - "auto"
-      fan_modes:
-        - "low"
-        - "medium"
-        - "high"
-        - "auto"
-      preset_modes:
-        - "away"
+name: "AC-Living"
+modes:
+  - "off"
+  - "fan_only"
+  - "heat"
+  - "cool"
+  - "dry"
+  - "auto"
+fan_modes:
+  - "low"
+  - "medium"
+  - "high"
+  - "auto"
+preset_modes:
+  - "away"
 #        - "home"
-        - "boost"
-        - "eco"
-        - "comfort"
-        - "sleep"
-        - "activity" 
-      min_temp: 16
-      max_temp: 32
-      temp_step: 0.5
-      device:
-        identifiers: 
-          - "APO176MPHY"
-        manufacturer: "TOSHIBA"
-        model: "MMD-APO176MPHY-C"  
-        name: "TOSHIBA"    
-      availability_topic: "EW11_AC/AC_1/state"
-      availability_template: "{{ value_json.connection }}"
-      preset_mode_command_topic: "EW11_AC/AC_1/preset"
-      preset_mode_state_topic: "EW11_AC/AC_1/state"
-      preset_mode_value_template: "{{ value_json.preset }}"
-      power_command_topic: "EW11_AC/AC_1/power/set"
-      fan_mode_command_topic: "EW11_AC/AC_1/fan_mode/set"
-      fan_mode_command_template: "{{ value }}"
-      fan_mode_state_topic: "EW11_AC/AC_1/state"
-      fan_mode_state_template: "{{ value_json.fan_mode }}"
-      mode_command_topic: "EW11_AC/AC_1/mode/set"
-      mode_command_template: "{{ value }}"
-      mode_state_topic: "EW11_AC/AC_1/state"
-      mode_state_template: "{{ value_json.mode }}"
-      temperature_command_topic: "EW11_AC/AC_1/target/set"
-      temperature_command_template: "{{ value }}"
-      temperature_state_topic: "EW11_AC/AC_1/state"
-      temperature_state_template: "{{ value_json.target }}"
-      current_temperature_topic: "EW11_AC/AC_1/state"
-      current_temperature_template: "{{ value_json.temperature }}"
-      current_humidity_topic: "EW11_AC/AC_1/state"
-      current_humidity_template: "{{ value_json.humidity }}"
-      temperature_unit: C
-      precision: 0.5
-      unique_id: ac_living
+  - "boost"
+  - "eco"
+  - "comfort"
+  - "sleep"
+  - "activity" 
+min_temp: 16
+max_temp: 32
+temp_step: 0.5
+device:
+  identifiers: 
+    - "APO176MPHY"
+  manufacturer: "TOSHIBA"
+  model: "MMD-APO176MPHY-C"  
+  name: "TOSHIBA"    
+availability_topic: "EW11_AC/AC_1/state"
+availability_template: "{{ value_json.connection }}"
+preset_mode_command_topic: "EW11_AC/AC_1/preset"
+preset_mode_state_topic: "EW11_AC/AC_1/state"
+preset_mode_value_template: "{{ value_json.preset }}"
+power_command_topic: "EW11_AC/AC_1/power/set"
+fan_mode_command_topic: "EW11_AC/AC_1/fan_mode/set"
+fan_mode_command_template: "{{ value }}"
+fan_mode_state_topic: "EW11_AC/AC_1/state"
+fan_mode_state_template: "{{ value_json.fan_mode }}"
+mode_command_topic: "EW11_AC/AC_1/mode/set"
+mode_command_template: "{{ value }}"
+mode_state_topic: "EW11_AC/AC_1/state"
+mode_state_template: "{{ value_json.mode }}"
+temperature_command_topic: "EW11_AC/AC_1/target/set"
+temperature_command_template: "{{ value }}"
+temperature_state_topic: "EW11_AC/AC_1/state"
+temperature_state_template: "{{ value_json.target }}"
+current_temperature_topic: "EW11_AC/AC_1/state"
+current_temperature_template: "{{ value_json.temperature }}"
+current_humidity_topic: "EW11_AC/AC_1/state"
+current_humidity_template: "{{ value_json.humidity }}"
+temperature_unit: C
+precision: 0.5
+unique_id: ac_living
