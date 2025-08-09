@@ -7,7 +7,7 @@ sensors:
   - entity: sensor.livingroom_temperature
     name: 温度
     decimals: 1
-  - entity: sensor.esp32l_qingping_humidity
+  - entity: sensor.livingroom_humidity
     name: 湿度
     decimals: 0
   - entity: sensor.ac_living_lasttime
