@@ -1,55 +1,55 @@
-                  type: custom:simple-thermostat
-                  entity: climate.ac_living
-                  hide:
-                    state: true
-                    temperature: true
-                  sensors:
-                    - entity: sensor.livingroom_temperature
-                      name: 温度
-                      decimals: 1
-                    - entity: sensor.esp32l_qingping_humidity
-                      name: 湿度
-                      decimals: 0
-                    - entity: sensor.ac_living_lasttime
-                      name: 时长
-                      decimals: 1
-                  header: {}
-                  layout:
-                    mode:
-                      names: true
-                      icons: true
-                      headings: false
-                    step: row
-                  card_mod:
-                    style: |
-                      ha-card {
-                        --st-font-size-xl: 40px;
-                        --st-font-size-l: 40px;
-                        --st-font-size-m: 40px; 
-                        --st-font-size-sensors: 15px;
-                        --st-spacing: 3px;
-                      }
-                  control:
-                    hvac:
-                      auto: false
-                    preset:
-                      activity: false
-                      home: false
-                      away:
-                        name: away
-                        icon: mdi:walk
-                      none:
-                        name: none
-                        icon: mdi:home
-                      comfort:
-                        name: 26.6-27.2
-                        icon: mdi:sofa
-                      eco:
-                        name: 26.3-27
-                        icon: mdi:snowflake
-                      boost:
-                        name: boost
-                        icon: mdi:fan-auto
-                      sleep:
-                        name: 27-27.5
-                        icon: mdi:bed
+type: custom:simple-thermostat
+entity: climate.ac_living
+hide:
+  state: true
+  temperature: true
+sensors:
+  - entity: sensor.livingroom_temperature
+    name: 温度
+    decimals: 1
+  - entity: sensor.livingroom_humidity
+    name: 湿度
+    decimals: 0
+  - entity: sensor.ac_living_lasttime
+    name: 时长
+    decimals: 1
+header: {}
+layout:
+  mode:
+    names: true
+    icons: true
+    headings: false
+  step: row
+card_mod:
+  style: |
+    ha-card {
+      --st-font-size-xl: 40px;
+      --st-font-size-l: 40px;
+      --st-font-size-m: 40px; 
+      --st-font-size-sensors: 15px;
+      --st-spacing: 3px;
+    }
+control:
+  hvac:
+    auto: false
+  preset:
+    activity: false
+    home: false
+    away:
+      name: away
+      icon: mdi:walk
+    none:
+      name: none
+      icon: mdi:home
+    comfort:
+      name: 26.6-27.2
+      icon: mdi:sofa
+    eco:
+      name: 26.3-27
+      icon: mdi:snowflake
+    boost:
+      name: boost
+      icon: mdi:fan-auto
+    sleep:
+      name: 27-27.5
+      icon: mdi:bed
