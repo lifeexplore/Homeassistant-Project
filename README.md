@@ -14,8 +14,8 @@
    7. [TCP/IP网络设备](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/TCP_IP.md)：EW11
    8. MQTT：空调(climate)的实现，模式设置
    9. [读取HomePod传感器数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/README.md)
-   10. HomePod，完美的音乐+语音控制+TTS
-   11. 电视的组合设置（小米+Apple TV）
+   10. HomePod：完美的音乐+语音控制+TTS
+   11. 电视的组合设置：小米 + Apple TV
    12. NodeRed
    13. 杜亚窗帘485连接
    14. 电网数据
