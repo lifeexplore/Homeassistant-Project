@@ -18,5 +18,5 @@
    11. 电视的组合：小米 + Apple TV
    12. [NodeRed](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/README.md)：空调，杜亚窗帘，电网数据，智能锁，12123数据追踪，手机无线数据追踪
    13. UIOT所谓Zigbee设备的替代
-   14. 自动化：早上问候/晚上问候，空调的不同模式，舒适/节能/睡觉，电视的语音控制，音乐播放睡眠定时，警报的处理
+   14. 自动化：早上/晚上问候，空调的不同模式，舒适/节能/睡觉，电视的语音控制，音乐播放睡眠定时，警报的处理
    15. AI的使用：Grok
