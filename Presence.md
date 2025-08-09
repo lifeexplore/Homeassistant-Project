@@ -1,6 +1,6 @@
 地理围栏：
   * GPS：有较大的误差，而且依恋于手机的数据更新
-  * BLE：[ESPresence](https://espresense.com/devices)，[Bermuda](https://github.com/agittins/bermuda?tab=readme-ov-file)，[Romm-assistant](https://www.room-assistant.io/guide/#how-it-works) - 需要手机保持握手，经常掉线
+  * BLE：[ESPresence](https://espresense.com/devices)，[Bermuda](https://github.com/agittins/bermuda?tab=readme-ov-file)，[Room-assistant](https://www.room-assistant.io/guide/#how-it-works) - 需要手机保持握手，经常掉线
   * Wifi：[iPhone Detect](https://github.com/mudape/iphonedetect) - 稳定可靠，连接及时(取决于路由器响应速度)
 
 自动化：
