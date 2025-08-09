@@ -1,0 +1,194 @@
+type: state-icon
+icon: mdi:door-closed-lock
+entity: binary_sensor.frontdoor
+title: 户门
+style:
+  left: 44%
+  top: 76%
+tap_action:
+  action: fire-dom-event
+  browser_mod:
+    service: browser_mod.popup
+    data:
+      size: classic
+      content:
+        type: vertical-stack
+        cards:
+          - type: custom:button-card
+            layout: verticle
+            card-mod:
+              style: |
+                :host {
+                margin: -1% 0px -1% 0px;
+                }
+            show_icon: true
+            show_entity_picture: true
+            entity: binary_sensor.frontdoor
+            entity_picture: /local/icon/kaadas.png
+            size: 22%
+            tap_action:
+              action: null
+            show_state: false
+            show_name: true
+            name: >
+              [[[ return states['binary_sensor.frontdoor'].attributes.opentype +
+              ' ' +
+              helpers.formatTimeWithSeconds(states['binary_sensor.frontdoor'].last_changed);
+              ]]]
+            styles:
+              grid:
+                - grid-template-areas: "\"i\" \"n\" \"data\""
+                - grid-template-columns: 1fr
+                - grid-template-rows: min-content min-content
+              card:
+                - border-radius: 20px
+                - height: 160px
+              icon:
+                - position: relative
+                - left: "-25%"
+                - top: 0%
+              name:
+                - position: absolute
+                - left: 50%
+                - top: 75%
+              custom_fields:
+                operatingmode:
+                  - position: absolute
+                  - left: 38%
+                  - top: 6%
+                safemode:
+                  - position: absolute
+                  - left: 68%
+                  - top: 6%
+                defences:
+                  - position: absolute
+                  - left: 38%
+                  - top: 36%
+                battery:
+                  - position: absolute
+                  - left: 68%
+                  - top: 36%
+            custom_fields:
+              operatingmode:
+                card:
+                  type: custom:mushroom-template-card
+                  primary: 反锁模式
+                  secondary: ""
+                  icon: mdi:shield-lock-open
+                  icon_color: >
+                    [[[  if
+                    (states['binary_sensor.frontdoor'].attributes.operatingmode
+                    == 1)
+                      return "blue";
+                    ]]]
+                  entity: null
+                  badge_icon: ""
+                  fill_container: true
+                  card_mod:
+                    style: |
+                      ha-card {
+                       background: none;
+                       border-radius: 0px;
+                       border: none
+                      }
+              safemode:
+                card:
+                  type: custom:mushroom-template-card
+                  primary: 双重验证
+                  secondary: ""
+                  icon: mdi:shield-plus
+                  icon_color: >
+                    [[[  if
+                    (states['binary_sensor.frontdoor'].attributes.safemode == 1)
+                      return "blue";
+                    ]]]
+                  entity: null
+                  badge_icon: ""
+                  fill_container: true
+                  card_mod:
+                    style: |
+                      ha-card {
+                       background: none;
+                       border-radius: 0px;
+                       border: none
+                      }
+              defences:
+                card:
+                  type: custom:mushroom-template-card
+                  primary: 布防模式
+                  secondary: ""
+                  icon: mdi:shield-home
+                  icon_color: >
+                    [[[  if
+                    (states['binary_sensor.frontdoor'].attributes.defences == 1)
+                      return "blue";
+                    ]]]
+                  entity: null
+                  badge_icon: ""
+                  fill_container: true
+                  card_mod:
+                    style: |
+                      ha-card {
+                       background: none;
+                       border-radius: 0px;
+                       border: none
+                      }
+              battery:
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    [[[ return '电池'  + states['sensor.frontdoor_battery'].state
+                    + '%'; ]]]
+                  secondary: ""
+                  icon: |
+                    [[[ if(states['sensor.frontdoor_battery'].state>70)
+                      return "mdi:battery";
+                      else if(states['sensor.frontdoor_battery'].state>40)
+                      return "mdi:battery-50";
+                      else if(states['sensor.frontdoor_battery'].state>20)
+                      return "mdi:battery-30";
+                      else return "mdi:battery-10";
+                    ]]]
+                  icon_color: |
+                    [[[ if(states['sensor.frontdoor_battery'].state>60)
+                      return "blue";
+                      else if(states['sensor.frontdoor_battery'].state>20)
+                      return "yellow";
+                      else return "red";
+                    ]]]
+                  entity: null
+                  badge_icon: ""
+                  fill_container: true
+                  card_mod:
+                    style: |
+                      ha-card {
+                       background: none;
+                       border-radius: 0px;
+                       border: none
+                                }
+          - type: history-graph
+            show_names: false
+            entities:
+              - entity: binary_sensor.frontdoor
+          - type: custom:logbook-card
+            entity: binary_sensor.frontdoor
+            max_items: 10
+            group_by_day: true
+            scroll: true
+            title: ""
+            state_map:
+              - label: 打开
+                value: "on"
+              - label: 关闭
+                value: "off"
+            show:
+              end_date: false
+              start_date: true
+            duration:
+              labels:
+                second: 秒
+                minute: 分钟
+                hour: 小时
+                day: 天
+                week: 星期
+                month: 月
