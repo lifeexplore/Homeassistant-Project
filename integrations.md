@@ -33,3 +33,4 @@
   * [Colorfulclous Weather Card](https://github.com/fineemb/lovelace-colorfulclouds-weather-card)
   * [iOS Theme](https://github.com/JuanMTech/ios-theme)
   * [custom icons](https://github.com/Mariusthvdb/custom-icons)
+  * [body-miscale-card](https://github.com/dckiller51/lovelace-body-miscale-card)
