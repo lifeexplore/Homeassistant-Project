@@ -4,4 +4,4 @@
 * iPad电量
 * 手机无线流量：点击为[合约数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/Chicom.md)
 * 体重：点击为[身体数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Person/Body.png)，[body-miscale-card](https://github.com/dckiller51/lovelace-body-miscale-card)
-* * 在家状态：[iPhone Detect](https://github.com/mudape/iphonedetect)
+* 在家状态：[iPhone Detect](https://github.com/mudape/iphonedetect)
