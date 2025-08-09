@@ -8,7 +8,7 @@
 * [MQTT](https://www.home-assistant.io/integrations/mqtt)
 
 设备：
-* 空调
-* 窗帘
+* [空调](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/IRACC.md)
+* [窗帘](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/Dooya.md)
 * [Zigbee](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Zigbee.md)
-* 12123
+* [12123](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/12123.md)
