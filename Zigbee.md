@@ -7,7 +7,7 @@
 
 设备：
 * 人体存在传感器 - [SNZB-06P](https://support.sonoff.tech/zh-hans/snzb-06p-usermanual/)
-* 涂鸦温湿度传感器 - [TS0601](https://www.zigbee2mqtt.io/devices/TS0601_temperature_humidity_sensor_1.html)
+* 温湿度传感器 - [TS0601](https://www.zigbee2mqtt.io/devices/TS0601_temperature_humidity_sensor_1.html)
 
 特点：
 * 响应较快
