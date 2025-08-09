@@ -3,3 +3,4 @@
 * Tuya智能开关 - [Tuya](https://www.home-assistant.io/integrations/tuya)
 * Tuya智能灯泡 - [Tuya](https://www.home-assistant.io/integrations/tuya)
 * 空调 - IRACC控制器485连接[EW11](http://www.hi-flying.com/elfin-ew10-elfin-ew11)
+* 窗帘 - 杜亚485连接[EW11](http://www.hi-flying.com/elfin-ew10-elfin-ew11)
