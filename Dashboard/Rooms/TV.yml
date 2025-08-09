@@ -1,24 +1,24 @@
-    platform: universal
-    name: TV
-    device_class: TV
-    unique_id: tv
-    state_template: >
-      {% if(states['media_player.xiaomi_4kh1_b920_play_control'].state=='idle') %}
-      on
-      {% else %} 
-      off
-      {% endif %}                  
-    children:
-      - media_player.xiaomi_4kh1_b920_play_control
-    commands:
-      turn_on:
-        service: script.toggle_tv
-      turn_off: 
-        service: script.toggle_tv   
-      select_source:
-        action: script.tv_source
-        data:
-            source: "{{ source }}"          
-    attributes:
-      source: input_select.tv_source_list 
-      source_list: input_select.tv_source_list|options 
+platform: universal
+name: TV
+device_class: TV
+unique_id: tv
+state_template: >
+  {% if(states['media_player.xiaomi_4kh1_b920_play_control'].state=='idle') %}
+  on
+  {% else %} 
+  off
+  {% endif %}                  
+children:
+  - media_player.xiaomi_4kh1_b920_play_control
+commands:
+  turn_on:
+    service: script.toggle_tv
+  turn_off: 
+    service: script.toggle_tv   
+  select_source:
+    action: script.tv_source
+    data:
+        source: "{{ source }}"          
+attributes:
+  source: input_select.tv_source_list 
+  source_list: input_select.tv_source_list|options 
