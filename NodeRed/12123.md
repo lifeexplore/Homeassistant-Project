@@ -1,20 +1,8 @@
-说明：
-* BLE设备 - 廉价，部署方便(电池)
-    * [ESPHome](https://esphome.io)：编程容易，扩展性很好
-    * [ESP32](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/ESP32.png)：便宜，部署方便(USB/Wifi)
-* ESPHome中的BLE：[BLE Gateway](https://github.com/myhomeiot/esphome-components#ble-gateway)，[BLE Monitor](https://custom-components.github.io/ble_monitor/Installation)
-* [抓包BLE](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/sniff%20BLE.md) 
-* [青萍传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/Qingping.md)
-* [小米温度/湿度传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/LYWSD03.md)
-* [Smart Light灯具](https://github.com/aronsky/esphome-components)
-* [Picooc(有品)电子秤](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/Picooc.md)
-  
-注意的问题：
-* HASS可以直接访问BLE设备，但是实时性和编程性都不好，建议用ESPHome。如：青萍和小米的温度/湿度传感器
-* 另外，分布控制可以减少程序的互扰，编程更加的清晰，可靠
-* 下面中的type不建议用arduino，效率太低，内存占的很大，建议用esp-idf
+![AC](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/AC.png)
 
-      esp32:
-        board: esp32dev
-        framework:
-          type: esp-idf
+* IRACC控制器485连接[EW11](http://www.hi-flying.com/elfin-ew10-elfin-ew11)
+* NodeRed控制
+* [Simple Thermostat](https://github.com/nervetattoo/simple-thermostat)卡片
+* [MQTT](https://www.home-assistant.io/integrations/climate.mqtt/)实现：部分HASS卡片[代码](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/AC%20card.yaml)，配置[代码](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/AC%20config.yaml)
+* 空调带的温度计不准，尽量不要用。电子温度计也有一定的误差，需要相应调整
+* 时长是昨天的运行时间，可以通过[历史数据](https://www.home-assistant.io/integrations/history_stats/)获得
