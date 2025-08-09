@@ -5,3 +5,4 @@
 
 实现：
 * [Mosquitto](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Mosquitto.md)
+* [MQTT](https://www.home-assistant.io/integrations/mqtt)
