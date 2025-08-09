@@ -31,8 +31,7 @@ tap_action:
             show_state: false
             show_name: true
             name: >
-              [[[ return states['binary_sensor.frontdoor'].attributes.opentype +
-              ' ' +
+              [[[ return states['binary_sensor.frontdoor'].attributes.opentype + ' ' +
               helpers.formatTimeWithSeconds(states['binary_sensor.frontdoor'].last_changed);
               ]]]
             styles:
@@ -76,9 +75,7 @@ tap_action:
                   secondary: ""
                   icon: mdi:shield-lock-open
                   icon_color: >
-                    [[[  if
-                    (states['binary_sensor.frontdoor'].attributes.operatingmode
-                    == 1)
+                    [[[  if(states['binary_sensor.frontdoor'].attributes.operatingmode== 1)
                       return "blue";
                     ]]]
                   entity: null
@@ -119,8 +116,7 @@ tap_action:
                   secondary: ""
                   icon: mdi:shield-home
                   icon_color: >
-                    [[[  if
-                    (states['binary_sensor.frontdoor'].attributes.defences == 1)
+                    [[[  if(states['binary_sensor.frontdoor'].attributes.defences == 1)
                       return "blue";
                     ]]]
                   entity: null
@@ -137,8 +133,7 @@ tap_action:
                 card:
                   type: custom:mushroom-template-card
                   primary: >
-                    [[[ return '电池'  + states['sensor.frontdoor_battery'].state
-                    + '%'; ]]]
+                    [[[ return '电池'  + states['sensor.frontdoor_battery'].state + '%'; ]]]
                   secondary: ""
                   icon: |
                     [[[ if(states['sensor.frontdoor_battery'].state>70)
@@ -165,7 +160,7 @@ tap_action:
                        background: none;
                        border-radius: 0px;
                        border: none
-                                }
+                      }
           - type: history-graph
             show_names: false
             entities:
