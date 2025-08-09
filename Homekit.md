@@ -4,3 +4,4 @@
 * 语音控制
 * TTS：Edge TTS
 * HASS整合最好的生态
+* HomePod：音质最好的音响
