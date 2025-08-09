@@ -6,3 +6,9 @@
 实现：
 * [Mosquitto](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Mosquitto.md)
 * [MQTT](https://www.home-assistant.io/integrations/mqtt)
+
+设备：
+* 空调
+* 窗帘
+* Tasmota
+* 12123
