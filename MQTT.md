@@ -10,5 +10,5 @@
 设备：
 * 空调
 * 窗帘
-* Tasmota
+* [Zigbee](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Zigbee.md)
 * 12123
