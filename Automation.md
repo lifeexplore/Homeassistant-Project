@@ -9,7 +9,7 @@ HASS的自动化：
 
 空调模式控制：
 * 不同的时段，通过空调的Preset，设定舒适/清凉/睡觉等模式
-* 空调自动运行在设定的温度范围内，降低能耗(电量曲线)，提高效率
+* 空调自动运行在设定的温度范围内，降低能耗([电量曲线](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/power.jpg)），提高效率
 * 也可以通过HomePod的语音触发
 
 电视的语音控制
