@@ -1,20 +1,4 @@
-方案选择：Tasmota
-* [Zigbee2MQTT](https://www.zigbee2mqtt.io)：Docker安装，资源较多，扩展性一般，控制较困难
-* [ZHA](https://www.home-assistant.io/integrations/zha/)：HASS直接控制，资源较少，扩展性一般
-* [Zigbee2Tasmota](https://tasmota.github.io/docs/)：独立运行，资源有限，但扩展性和控制性都很好
-
-网关：[藏机](https://www.zigbee.cc)
-
-设备：
-* 人体存在传感器 - [SNZB-06P](https://support.sonoff.tech/zh-hans/snzb-06p-usermanual/)
-* 温湿度传感器 - [TS0601](https://www.zigbee2mqtt.io/devices/TS0601_temperature_humidity_sensor_1.html)
-
-特点：
-* 响应较快
-* 数据更新及时
-* 成本高于BLE
-* 对比BLE Mesh没有经验
-
-抓包：Wireshark
-* 参考：https://e2echina.ti.com/support/wireless-connectivity/zigbee-and-thread/f/zigbee-thread-forum/162782/wireshark-zigbee-sniffer
-* 硬件：Windows + USB Dongle
+* 选择：经过测试和比较多个平台，最后选择Grok。因为它给的答案较靠谱，确实有帮助
+* 使用原因：新的技术发展很快，我们不可能都能掌握，通过AI能够帮助你尽快解决问题
+* 使用方法：一定要用深度思考，最近提出你的问题，如果答案不是你要的，可以尝试换一种提问的方法
+* 优势：可以很快帮你浏览网络，找到你可能需要的答案，效率很高
