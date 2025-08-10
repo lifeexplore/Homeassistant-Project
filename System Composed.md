@@ -2,7 +2,7 @@
 
 * 硬件：AMDx86小主机，4网口，2USB，HDMI等
 * OS：[OpenWrt](https://github.com/lifeexplore/OpenWrt-Setup)，[Docker](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/Docker/README.md) + [samba](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/Samba%20Setup/README.md) + [NetBird](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/NetBird%20Setup/README.md)
-* 网络连接：[旁路由](https://github.com/lifeexplore/OpenWrt-Setup) + [OpenClash](https://github.com/lifeexplore/OpenClash-Auxiliary-Files)
+* 网络连接：[旁路由](https://github.com/lifeexplore/OpenWrt-Setup/README.md) + [OpenClash](https://github.com/lifeexplore/OpenClash-Auxiliary-Files/README.md)
 * Docker容器：[NodeRed](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/NodeRed.md) + [ESPHome](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/ESPHome.md) + [Mosquitto](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Mosquitto.md) + [Portainer](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Portainer.md) + [HomeAssistant](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Homeassistant.md) + [Calendar](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Calendar.md)
 
 Zigbee网关：
