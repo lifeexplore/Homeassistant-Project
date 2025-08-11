@@ -15,7 +15,7 @@
    8. [MQTT](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/MQTT.md)：空调(climate)的实现/模式设置，窗帘控制
    9. [读取HomePod传感器数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/README.md)
    10. [HomeKit生态](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Homekit.md)：[Device](https://www.home-assistant.io/integrations/homekit_controller/) + [Bridge](https://www.home-assistant.io/integrations/homekit/)
-   11. [电视的组合](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Universal.md)：小米 + Apple TV
+   11. [电视组合](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Universal.md)：小米 + Apple TV
    12. [NodeRed](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/README.md)：空调，杜亚窗帘，电网数据，智能锁，12123数据追踪，手机无线数据追踪
    13. [自动化](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Automation.md)：早上/晚上问候，空调的不同模式，舒适/节能/睡觉，电视的语音控制，音乐播放睡眠定时，警报的处理
    14. [AI的使用](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Grok.md)：Grok
