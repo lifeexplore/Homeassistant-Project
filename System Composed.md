@@ -11,7 +11,7 @@ Zigbee：
 * 连接：Wifi
 * OS：[Tasmota](https://tasmota.github.io/docs/)
 
-BLE：
+[BLE](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/README.md)：
 
 * 硬件：USB Dongle(淘宝¥20左右）
 * 连接：USB
