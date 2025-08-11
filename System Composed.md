@@ -17,7 +17,7 @@ BLE：
 * 连接：USB
 * OS：[ESPHome](https://esphome.io)
 
-HomeKit生态：
+[HomeKit生态](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Homekit.md)：
 
 * 硬件：HomePod + Apple TV
 * 连接：Wifi
