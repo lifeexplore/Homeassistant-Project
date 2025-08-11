@@ -16,7 +16,8 @@ BLE：
 * 硬件：USB Dongle(淘宝¥20左右）
 * 连接：USB
 * OS：[ESPHome](https://esphome.io)
-
+* 设备：Picooc(有品)，青萍/小米温度计和Smart Light等
+  
 [HomeKit生态](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Homekit.md)：
 
 * 硬件：HomePod + Apple TV
