@@ -5,11 +5,12 @@
 * 网络连接：[旁路由](https://github.com/lifeexplore/OpenWrt-Setup) + [OpenClash](https://github.com/lifeexplore/OpenClash-Auxiliary-Files)
 * Docker容器：[NodeRed](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/NodeRed.md) + [ESPHome](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/ESPHome.md) + [Mosquitto](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Mosquitto.md) + [Portainer](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Portainer.md) + [HomeAssistant](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Homeassistant.md) + [Calendar](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Calendar.md)
 
-Zigbee：
+[Zigbee](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Zigbee.md)：
 
 * 硬件：[藏机](https://www.zigbee.cc)
 * 连接：Wifi
 * OS：[Tasmota](https://tasmota.github.io/docs/)
+* 设备：人体存在传感器，温湿度传感器
 
 [BLE](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/README.md)：
 
