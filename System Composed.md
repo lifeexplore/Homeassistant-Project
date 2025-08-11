@@ -5,7 +5,7 @@
 * 网络连接：[旁路由](https://github.com/lifeexplore/OpenWrt-Setup) + [OpenClash](https://github.com/lifeexplore/OpenClash-Auxiliary-Files)
 * Docker容器：[NodeRed](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/NodeRed.md) + [ESPHome](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/ESPHome.md) + [Mosquitto](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Mosquitto.md) + [Portainer](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Portainer.md) + [HomeAssistant](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Homeassistant.md) + [Calendar](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Calendar.md)
 
-Zigbee网关：
+Zigbee：
 
 * 硬件：[藏机](https://www.zigbee.cc)
 * 连接：Wifi
@@ -17,17 +17,14 @@ BLE：
 * 连接：USB
 * OS：[ESPHome](https://esphome.io)
 
-语音和音乐：
+HomeKit生态：
 
-* 硬件：HomePod
+* 硬件：HomePod + Apple TV
 * 连接：Wifi
 * 音乐平台：苹果
-
-电视：
-
-* 硬件：小米 + Apple TV + HomePod
+* 语音控制：HomePod
+* 电视组合：小米 + Apple TV + HomePod
 * 连接：HDMI(eARC)
-
 
 说明：
 1. 主机性能需要有一定的保障。不仅可以保证系统的响应，也为系统的功能扩充，软件安装留有一定的余量。
