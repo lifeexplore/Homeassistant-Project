@@ -1,0 +1,74 @@
+- id: 'Good Morning'
+  alias: 'Good morning '
+  description: 早上好
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.snzb_06p_occupancy
+    from: 'off'
+    to: 'on'
+  conditions:
+  - condition: time
+    after: 07:00:00
+    before: 09:00:00
+  actions:
+  - if:
+    - condition: time
+      after: 07:00:00
+      before: 09:00:00
+    - condition: state
+      state: 'off'
+      entity_id: input_boolean.good_morning
+    then:
+    - action: cover.open_cover
+      metadata: {}
+      data: {}
+      target:
+        entity_id: cover.dooya_living_softness
+    - action: media_player.volume_set
+      data:
+        volume_level: 0.36
+      target:
+        entity_id:
+        - media_player.livingroom_left
+        - media_player.livingroom_right
+    - action: tts.edge_tts_say
+      metadata: {}
+      data:
+        entity_id: media_player.livingroom_right
+        cache: true
+        message: '早上好,今天{{ states.weather.sanya.attributes.condition_desc }}最高{{ states.weather.sanya.attributes.temphigh
+          - 1 }}度,最低{{ states.weather.sanya.attributes.templow - 1 }}度,空气质量{{ states.weather.sanya.attributes.aqi
+          }}'
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 4
+        milliseconds: 0
+    - action: tts.edge_tts_say
+      metadata: {}
+      data:
+        cache: true
+        message: 下面请欣赏音乐
+        entity_id: media_player.livingroom_right
+    - action: script.ventilate
+      metadata: {}
+      data: {}
+    - action: input_boolean.turn_on
+      metadata: {}
+      data: {}
+      target:
+        entity_id:
+        - input_boolean.good_morning
+    - delay:
+        hours: 2
+        minutes: 0
+        seconds: 0
+        milliseconds: 0
+    - action: input_boolean.turn_off
+      metadata: {}
+      data: {}
+      target:
+        entity_id:
+        - input_boolean.good_morning
+  mode: single
