@@ -1,6 +1,6 @@
 * 微信获取数据变为不可能
 * 订阅每天短信通知流量使用情况
-* iPhone快捷程序处理短信，发送数据到HASS
+* iPhone快捷自动化处理短信，发送数据到HASS
 
       sensor:
         - name: "Data Left"
