@@ -3,7 +3,7 @@ HASS的自动化
 * 编写方便：可视或者YAML，可跟踪
 * 脚本功能强大：可调用，嵌套
 
-早上/晚上问候
+[早上](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Automation/Good%20Morning.yaml)/晚上问候
 * 定义二元开关，映射到Apple Home
 * 特定条件触发：TTS问候，然后打开二元开关，触发Home中的自动化，播放指定的音乐
 
