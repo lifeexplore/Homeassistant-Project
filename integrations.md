@@ -16,7 +16,6 @@
   * [mini-graph-card](https://github.com/kalkih/mini-graph-card)
   * [button-card](https://github.com/custom-cards/button-card)
   * [Passive BLE monitor integration](https://github.com/custom-components/ble_monitor)
-  * [WebRTC canera](https://github.com/custom-components/ble_monitor)
   * [Mini Media Player](https://github.com/kalkih/mini-media-player)
   * [browser_mod](https://github.com/thomasloven/hass-browser_mod)
   * [apexchars-card](https://github.com/RomRider/apexcharts-card)
