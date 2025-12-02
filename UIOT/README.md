@@ -8,7 +8,7 @@
 * 传感器：Zigbee设备。由于网上没有任何的资料，我们只能想办法完全模拟UIOT的网关行为，连接它的Zigbee设备。
 	1. [ZHA的连接效果](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/ZHA.jpg)（Z2Q类似）
 	2. [Tasmato的连接效果](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/Tasmota.jpg)：可以看到6A0有数据出错，但很快输出"FF23890001AB"后脱机
-	3. [抓包](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/Tasmota.jpg)：通过数据类型41输出
+	3. [抓包](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/first.jpg)：通过数据类型41输出
 	4. 分析结果：
 		a. 设备和网关通过6A0交换数据，数据类型41
 		b. 入网后，设备首先发送"FF238BFFFFFFFFA8"，然后发送"FF238000158D00041EA4EE000021310419031404196C"，如果没有应答，或者回答错误，进入休眠模式
