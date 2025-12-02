@@ -24,5 +24,5 @@
    13. [NodeRed](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/README.md)：空调，杜亚窗帘，日常费用，智能锁，12123数据追踪
    14. [自动化](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Automation.md)：早上/晚上问候，空调的不同模式，舒适/节能/睡觉，电视的语音控制，音乐播放睡眠定时，警报的处理
    15. [UIOT设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)：空调/窗帘/传感器
-   16. [远程服务](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/remote.md)：Cpolar
+   16. [远程控制](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/remote.md)：Cpolar
    17. [AI的使用](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Grok.md)：Grok
