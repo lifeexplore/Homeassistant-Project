@@ -4,8 +4,7 @@
 
 我的总结准备分以下的部分，具体说明了我的系统的构成，总结我的经验和教训。由于我的系统不可能覆盖所有的不同类型硬件，也不可能涵盖所有的功能和设置，完全基于我自身的需求考虑，水平有限，难免有很多的不足。仅供参考！
 
-我个人的原创包括：Picooc（有品）电子秤的驱动，UIOT的替代；
-值得参考的包括：Homekit生态及Homepod传感器读取，空调的节能控制，电视组合，AI的使用等。
+我个人的原创包括：Picooc（有品）电子秤的驱动，UIOT的替代；值得参考的包括：Homekit生态及Homepod传感器读取，空调的节能控制，电视组合，AI的使用等。
 
 还有一点事先说明，我不分享UI的设计，如果有需要的伙伴，可以在Hassbian或者Bilibili上搜，有不少的大佬有很不错的分享，如：Frankiesmall, koryking等。
    1. [系统构成](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/System%20Composed.md)：网关的选择建议和说明
