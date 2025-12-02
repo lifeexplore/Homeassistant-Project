@@ -21,18 +21,21 @@
 
 	5. 方案实现：结果反复试验，分析，终于成功！！
 
-		a. Zb文件 - 所有UIOT设备
+  a. Zb文件 - 所有UIOT设备
+
 			#Z2Tv1
 			# UIOT payload type 
 			:UIOT*,
 			06A0/0001,CustomData		
 
-		b. Rule 2 - 第一个参数
+	 b. Rule 2 - 第一个参数
+
 			Rule2
       			on ZbReceived#CustomData=FF238BFFFFFFFFA8 do ZbSend {"Device":%zbdevice%,"Send":"06a0_0a/01004108ff238b030c0300a4"} endon
     		Rule2 1		
 
-		c. Rule 3
+	 c. Rule 3
+
 			Rule3
       			on ZbReceived#CustomData=FF238000158D00041EA4EE000021310419031404196C do ZbSend {"Device":%zbdevice%,"Send":"06A0_0a/01004116ff238000158d00041ea4ee000021310419031411b7d7"} endon
       		Rule3 1
