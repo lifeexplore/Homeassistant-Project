@@ -17,7 +17,7 @@
    6. [Zigbee](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Zigbee.md)：Tasmota方案
    7. [围栏设置和人体监测](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Presence.md)：iPhoneDetect
    8. [TCP/IP网络设备](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/TCP_IP.md)：EW11
-   9. [MQTT](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/MQTT.md)：空调(climate)的实现/模式设置，窗帘控制
+   9. [MQTT](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/MQTT.md)：空调(climate)的实现/模式设置，窗帘(cover)控制
    10. [读取HomePod传感器数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/README.md)
    11. [HomeKit生态](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Homekit.md)：[Device](https://www.home-assistant.io/integrations/homekit_controller/) + [Bridge](https://www.home-assistant.io/integrations/homekit/)
    12. [电视组合](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Universal.md)：小米 + Apple TV
