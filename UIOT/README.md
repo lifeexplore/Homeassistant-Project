@@ -1,20 +1,8 @@
 说明：
-* BLE设备 - 廉价，部署方便(电池)
-    * [ESPHome](https://esphome.io)：编程容易，扩展性很好
-    * [ESP32](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/ESP32.png)：便宜，部署方便(USB/Wifi)
-* ESPHome中的BLE：[BLE Gateway](https://github.com/myhomeiot/esphome-components#ble-gateway)，[BLE Monitor](https://custom-components.github.io/ble_monitor/Installation)
-* [抓包BLE](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/sniff%20BLE.md) 
-* [青萍传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Rooms/Qingping.md)
-* [小米温度/湿度传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/LYWSD03.md)
-* [Smart Light灯具](https://github.com/aronsky/esphome-components)
-* [Picooc scale](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/Picooc.md)
-  
-注意的问题：
-* HASS可以直接访问BLE设备，但是实时性和编程性都不好，建议用ESPHome。如：青萍和小米的温度/湿度传感器
-* 另外，分布控制可以减少程序的互扰，编程更加的清晰，可靠。同时ESPhome可以多点部署，非常方便
-* 下面中的type不建议用arduino，效率太低，内存占的很大，建议用esp-idf
+* 我的UIOT设备是交房自带的，功能简单可用，但是扩展性不好，兼容性极差，价格较高
+* UIOT宣称基于Zigbee，其实它的设备只是传输层用的Zigbee（所谓的透传），协议层完全不兼容，完全无法用ZHA或者Z2Q链接，Z2T虽然可以链接，但也完全不能交换数据
+* 针对不同的设备，我采取了不同的方案替代，效果很好，可以很稳定的运行
 
-      esp32:
-        board: esp32dev
-        framework:
-          type: esp-idf
+方案：
+* 空调：我的空调是家用中央空调，UIOT通过IRACC控制器连接空调，再通过一个Zigbee的协议转换器和网关连接。这个转换器不稳定，有时会掉线，因此我完全摒弃了这个转换器。通过EW11实现网络的连接，NodeRed编程控制IRACC。具体请见：[空调](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/IRACC.md) 
+  
