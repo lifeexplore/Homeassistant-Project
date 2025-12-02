@@ -31,14 +31,14 @@
 	 	  b. Rule 2 - 第一个参数
 
 			Rule2
-      			on ZbReceived#CustomData=FF238BFFFFFFFFA8 do ZbSend {"Device":%zbdevice%,"Send":"06a0_0a/01004108ff238b030c0300a4"} endon
-    		Rule2 1		
+  			on ZbReceived#CustomData=FF238BFFFFFFFFA8 do ZbSend {"Device":%zbdevice%,"Send":"06a0_0a/01004108ff238b030c0300a4"} endon
+			Rule2 1		
 
 	    c. Rule 3
 
 			Rule3
-      			on ZbReceived#CustomData=FF238000158D00041EA4EE000021310419031404196C do ZbSend {"Device":%zbdevice%,"Send":"06A0_0a/01004116ff238000158d00041ea4ee000021310419031411b7d7"} endon
-      		Rule3 1
+  			on ZbReceived#CustomData=FF238000158D00041EA4EE000021310419031404196C do ZbSend {"Device":%zbdevice%,"Send":"06A0_0a/01004116ff238000158d00041ea4ee000021310419031411b7d7"} endon
+			Rule3 1
 		
    6. 窗帘的链接方式类似，只是有控制命令，抓包时必须全部抓到
 
