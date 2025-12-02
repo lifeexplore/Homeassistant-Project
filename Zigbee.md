@@ -8,6 +8,8 @@
 设备：
 * 人体存在传感器 - [SNZB-06P](https://support.sonoff.tech/zh-hans/snzb-06p-usermanual/)
 * 温湿度传感器 - [TS0601](https://www.zigbee2mqtt.io/devices/TS0601_temperature_humidity_sensor_1.html)
+* UIOT四合一传感器
+* UIOT窗帘电机
 
 特点：
 * 响应较快
