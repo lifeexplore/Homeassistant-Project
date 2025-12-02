@@ -4,7 +4,7 @@
 * 针对不同的设备，我采取了不同的方案接入，效果很好，运行很稳定
 
 方案：
-* 空调：我的空调是家用中央空调，UIOT通过IRACC控制器连接空调，再通过一个Zigbee的协议转换器和网关连接。这个转换器不稳定，有时会掉线，因此我完全摒弃了这个转换器。通过EW11实现网络的连接，NodeRed编程控制IRACC。具体请见：[空调](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/IRACC.md) 
+* 空调：我的空调是家用中央空调，UIOT通过IRACC控制器连接空调，再通过一个Zigbee的协议转换器和网关连接。这个转换器不稳定，有时会掉线。因此我完全摒弃了这个转换器，通过EW11实现网络的连接，NodeRed编程控制IRACC。具体请见：[空调](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/IRACC.md) 
 * 传感器：Zigbee设备。
 	1. [ZHA的连接效果](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/ZHA.jpg)（Z2Q类似）
 	2. [Tasmato的连接效果](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/Tasmota.jpg)：可以看到6A0有数据出错，但很快输出"FF23890001AB"后脱机
