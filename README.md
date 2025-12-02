@@ -19,7 +19,7 @@
    10. [读取HomePod传感器数据](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/README.md)
    11. [HomeKit生态](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Homekit.md)：[Device](https://www.home-assistant.io/integrations/homekit_controller/) + [Bridge](https://www.home-assistant.io/integrations/homekit/)
    12. [电视组合](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Universal.md)：小米 + Apple TV
-   13. [NodeRed](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/README.md)：空调，杜亚窗帘，电网数据，智能锁，12123数据追踪
+   13. [NodeRed](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/README.md)：空调，杜亚窗帘，日常费用，智能锁，12123数据追踪
    14. [自动化](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Automation.md)：早上/晚上问候，空调的不同模式，舒适/节能/睡觉，电视的语音控制，音乐播放睡眠定时，警报的处理
    15. [UIOT的替代](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)：空调/窗帘/传感器
    16. [AI的使用](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Grok.md)：Grok
