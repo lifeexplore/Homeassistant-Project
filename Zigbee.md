@@ -8,8 +8,8 @@
 设备：[链接页面](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/Success.jpg)
 * 人体存在传感器 - [SNZB-06P](https://support.sonoff.tech/zh-hans/snzb-06p-usermanual/)
 * 温湿度传感器 - [TS0601](https://www.zigbee2mqtt.io/devices/TS0601_temperature_humidity_sensor_1.html)
-* UIOT四合一传感器 — 详见[UIOT替代](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)
-* UIOT窗帘电机 — 详见[UIOT替代](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)
+* UIOT四合一传感器 — 详见[UIOT的设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)
+* UIOT窗帘电机 — 详见[UIOT的设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)
 
 特点：
 * 响应较快
