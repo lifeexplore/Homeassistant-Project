@@ -8,4 +8,4 @@
 * Hass自带：成本较高
 * Tailscale: 由于服务器在国外，经常有较大的延迟，而且手机/电脑上必须要运行客户端
 * Netbird：端到端，比Tailscale稍好一些，但也需要运行客户端
-* [Cpolar](https://www.cpolar.com/)：配置简单，无需在设备上运行客户端，
+* [Cpolar](https://www.cpolar.com/)：配置简单，无需在设备上运行客户端，价格便宜
