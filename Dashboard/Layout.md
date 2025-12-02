@@ -5,5 +5,5 @@
 * HomePod
 * [窗帘](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/Dooya.md)
 * [户门](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/frontdoor.md)
-* [电量](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/Power%20Grid.md)
+* [费用](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/Power%20Grid.md)
 * [天气预警](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Weather/warning.yaml)
