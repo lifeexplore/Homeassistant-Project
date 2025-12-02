@@ -5,7 +5,7 @@
 
 方案：
 * 空调：我的空调是家用中央空调，UIOT通过IRACC控制器连接空调，再通过一个Zigbee的协议转换器和网关连接。这个转换器不稳定，有时会掉线，因此我完全摒弃了这个转换器。通过EW11实现网络的连接，NodeRed编程控制IRACC。具体请见：[空调](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/IRACC.md) 
-* 传感器：Zigbee设备。由于网上没有任何的资料，我们只能想办法完全模拟UIOT的网关行为，连接它的Zigbee设备。
+* 传感器：Zigbee设备。
 	1. [ZHA的连接效果](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/ZHA.jpg)（Z2Q类似）
 	2. [Tasmato的连接效果](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/Tasmota.jpg)：可以看到6A0有数据出错，但很快输出"FF23890001AB"后脱机
 	3. [抓包](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/first.jpg)：通过数据类型41输出
@@ -40,4 +40,13 @@
       			on ZbReceived#CustomData=FF238000158D00041EA4EE000021310419031404196C do ZbSend {"Device":%zbdevice%,"Send":"06A0_0a/01004116ff238000158d00041ea4ee000021310419031411b7d7"} endon
       		Rule3 1
 		
-   6. [链接效果](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/Success.jpg)
+   6. 窗帘的链接方式类似，只是有控制命令，抓包时必须全部抓到
+
+   7. [链接效果](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/Success.jpg)
+
+补充：
+* 抓包时，设备必须完全复位，才能抓到完整的数据
+* 由于网上没有任何的资料，我们只能想办法完全模拟UIOT网关的行为，连接它的Zigbee设备
+* UIOT设备更新完全是自动的，设备会每6分钟更新一次
+* 窗帘状态有查询的命令，传感器没有发现有这样的命令
+* 设备重新上电后会自动链接，无需任何操作
