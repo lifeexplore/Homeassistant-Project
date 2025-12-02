@@ -35,28 +35,34 @@ tap_action:
         ptz:
           service: onvif.ptz
           data_left:
-            distance: 0.05
+            distance: 0.5
             entity_id: camera.hikvision_mainstream
+            move_mode: ContinuousMove           
             pan: LEFT
           data_right:
-            distance: 0.05
+            distance: 0.5
             entity_id: camera.hikvision_mainstream
+            move_mode: ContinuousMove
             pan: RIGHT
           data_up:
-            distance: 0.05
+            distance: 0.5
             entity_id: camera.hikvision_mainstream
+            move_mode: ContinuousMove            
             tilt: UP
           data_down:
-            distance: 0.05
+            distance: 0.5
             entity_id: camera.hikvision_mainstream
+            move_mode: ContinuousMove            
             tilt: DOWN
           data_zoom_in:
-            distance: 0.05
+            distance: 0.5
             entity_id: camera.hikvision_mainstream
+            move_mode: ContinuousMove            
             zoom: ZOOM_IN
           data_zoom_out:
-            distance: 0.05
+            distance: 0.5
             entity_id: camera.hikvision_mainstream
+            move_mode: ContinuousMove            
             zoom: ZOOM_OUT
         shortcuts:
           - name: 自动对焦
