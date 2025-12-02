@@ -4,7 +4,7 @@
 
 我的总结准备分以下的部分，具体说明了我的系统的构成，总结我的经验和教训。由于我的系统不可能覆盖所有的不同类型硬件，也不可能涵盖所有的功能和设置，完全基于我自身的需求考虑，水平有限，难免有很多的不足。仅供参考！
 
-我个人的原创包括：Picooc（有品）电子秤的驱动，UIOT的设备接入。
+我个人的原创包括：Picooc（有品）电子秤的驱动，UIOT设备接入。
 
 值得参考的包括：Homekit生态及Homepod传感器读取，空调的节能控制，电视组合，AI的使用等。
 
@@ -23,5 +23,5 @@
    12. [电视组合](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Universal.md)：小米 + Apple TV
    13. [NodeRed](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/README.md)：空调，杜亚窗帘，日常费用，智能锁，12123数据追踪
    14. [自动化](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Automation.md)：早上/晚上问候，空调的不同模式，舒适/节能/睡觉，电视的语音控制，音乐播放睡眠定时，警报的处理
-   15. [UIOT的设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)：空调/窗帘/传感器
+   15. [UIOT设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)：空调/窗帘/传感器
    16. [AI的使用](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Grok.md)：Grok
