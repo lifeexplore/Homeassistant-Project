@@ -1,0 +1,242 @@
+type: image
+title: 日常花费
+style:
+  left: 45%
+  top: 91%
+  width: 7%
+image: /api/image/serve/30fa9e6d4aaec29b457d166547ac840f/512x512
+tap_action:
+  action: fire-dom-event
+  browser_mod:
+    service: browser_mod.popup
+    data:
+      size: classic
+      content:
+        type: custom:config-template-card
+        variables:
+          GAS_STATE: states['sensor.gas_consumption'].state
+          WATER_STATE: states['sensor.water_consumption'].state
+        entities:
+          - gas_consumption
+          - water_consumption
+        card:
+          type: vertical-stack
+          cards:
+            - type: custom:apexcharts-card
+              graph_span: 11month
+              span:
+                start: year
+              header:
+                show: true
+                show_states: true
+                colorize_states: true
+              apex_config:
+                chart:
+                  height: 200px
+                xaxis:
+                  labels:
+                    format: MMM
+                plotOptions:
+                  bar:
+                    columnWidth: 95%
+              yaxis:
+                - id: first
+                  decimals: 0
+                  apex_config:
+                    tickAmount: 4
+                - id: second
+                  opposite: true
+                  decimals: 0
+                  apex_config:
+                    tickAmount: 4
+              series:
+                - entity: sensor.lastyearfee
+                  type: column
+                  name: 去年电费
+                  color: "#ffce44"
+                  yaxis_id: first
+                  show:
+                    legend_value: false
+                    in_header: false
+                  data_generator: |
+                    const data = []; const now = new Date();
+                    for (let i = 0; i <=11; i++) {
+                      const date = new Date(now.getFullYear(), i, 1);
+                      let value;
+                        value = entity.attributes.fee[11-i];
+                      data.push([date.getTime(), value]);
+                    }   return data;
+                - entity: sensor.lastyearpower
+                  type: column
+                  name: 去年电量
+                  color: "#6495ed"
+                  yaxis_id: second
+                  show:
+                    legend_value: false
+                    in_header: false
+                  data_generator: |
+                    const data = []; const now = new Date();
+                    for (let i = 0; i <=11; i++) {
+                      const date = new Date(now.getFullYear(), i, 1);
+                      let value;
+                        value = entity.attributes.power[11-i];
+                      data.push([date.getTime(), value]);
+                    }    return data; 
+                - entity: sensor.thisyearfee
+                  type: column
+                  name: 今年电费
+                  yaxis_id: first
+                  color: orange
+                  show:
+                    legend_value: false
+                    in_header: false
+                  data_generator: |
+                    const data = [];
+                    const now = new Date();
+                    const month = now.getMonth() - 1;
+
+                    for (let i = 0; i <=11; i++) {
+                      const date = new Date(now.getFullYear(), i, 1);
+                      let value;
+                        value = entity.attributes.fee[month-i];
+                      data.push([date.getTime(), value]);
+                    }
+                    return data; 
+                - entity: sensor.thisyearpower
+                  type: column
+                  name: 今年电量
+                  color: "#b048b5"
+                  yaxis_id: second
+                  show:
+                    legend_value: false
+                    in_header: false
+                  data_generator: |
+                    const data = [];
+                    const now = new Date();
+                    const month = now.getMonth();
+
+                    for (let i = 0; i <=11; i++) {
+                      const date = new Date(now.getFullYear(), i, 1);
+                      let value;
+                        value = entity.attributes.power[month-i];
+                      data.push([date.getTime(), value]);
+                    }
+                    return data;
+                - entity: sensor.lastyearfee
+                  yaxis_id: first
+                  name: 去年电费
+                  color: "#ffce44"
+                  show:
+                    in_chart: false
+                  header_actions:
+                    tap_action:
+                      action: none
+                - entity: sensor.lastyearpower
+                  yaxis_id: first
+                  name: 去年电量
+                  color: "#6495ed"
+                  show:
+                    in_chart: false
+                  header_actions:
+                    tap_action:
+                      action: none
+                - entity: sensor.thisyearfee
+                  yaxis_id: first
+                  name: 今年电费
+                  color: orange
+                  show:
+                    in_chart: false
+                  header_actions:
+                    tap_action:
+                      action: none
+                - entity: sensor.thisyearpower
+                  yaxis_id: first
+                  name: 今年电量
+                  color: "#b048b5"
+                  show:
+                    in_chart: false
+                  header_actions:
+                    tap_action:
+                      action: none
+            - type: custom:apexcharts-card
+              graph_span: 11month
+              header:
+                show: true
+                show_states: true
+                colorize_states: true
+              apex_config:
+                chart:
+                  height: 120px
+                xaxis:
+                  labels:
+                    format: MMM
+                plotOptions:
+                  bar:
+                    columnWidth: 35%
+              series:
+                - entity: sensor.water_consumption
+                  type: column
+                  color: "#ffce44"
+                  show:
+                    legend_value: false
+                    in_header: false
+                  data_generator: |
+                    const data = [];
+                    const now = new Date();
+
+                    for (let i = 0; i <=10; i++) {
+                      const date = new Date(now.getFullYear(), i, 1);
+                      let value;
+                        value = entity.attributes.water[10-i];
+                      data.push([date.getTime(), value]);
+                    }
+                    return data;
+                - entity: sensor.water_consumption
+                  color: "${WATER_STATE < 5 ? 'red' : '#ffce44'}"
+                  name: 水表读数
+                  show:
+                    in_chart: false
+                  header_actions:
+                    tap_action:
+                      action: none
+            - type: custom:apexcharts-card
+              graph_span: 11month
+              header:
+                show: true
+                show_states: true
+                colorize_states: true
+              apex_config:
+                chart:
+                  height: 120px
+                xaxis:
+                  labels:
+                    format: MMM
+                plotOptions:
+                  bar:
+                    columnWidth: 35%
+              series:
+                - entity: sensor.gas_consumption
+                  type: column
+                  color: "#6495ed"
+                  show:
+                    legend_value: false
+                    in_header: false
+                  data_generator: |
+                    const data = [];
+                    const now = new Date();
+
+                    for (let i = 0; i <=10; i++) {
+                      const date = new Date(now.getFullYear(), i, 1);
+                      let value;
+                        value = entity.attributes.gas[10-i];
+                      data.push([date.getTime(), value]);
+                    }
+                    return data;
+                - entity: sensor.gas_consumption
+                  name: 气表读数
+                  color: "${GAS_STATE < 5 ? 'red' : '#6495ed'}"
+                  show:
+                    in_chart: false
+                  header_actions:
+                    tap_action:
+                      action: none
