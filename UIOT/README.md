@@ -22,8 +22,8 @@
 	5. 方案实现：结果反复试验，分析，终于成功！！
 
 		a. Zb文件 - 所有UIOT设备
-			#Z2Tv1
-			# UIOT payload type 
+	#Z2Tv1
+		# UIOT payload type 
 			:UIOT*,
 			06A0/0001,CustomData		
 
