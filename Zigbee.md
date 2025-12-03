@@ -11,7 +11,7 @@
 * UIOT四合一传感器 — 详见[UIOT设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)
 * UIOT窗帘电机 — 详见[UIOT设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)
 
-特点：
+Zigbee特点：
 * 响应较快
 * 数据更新及时
 * 成本高于BLE
