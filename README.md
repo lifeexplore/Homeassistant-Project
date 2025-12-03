@@ -8,7 +8,7 @@
 
 值得参考的包括：Homekit生态及Homepod传感器读取，空调的节能控制，电视组合，AI的使用等。
 
-还有一点事先说明，我不分享UI的设计，如果有需要的伙伴，可以在Hassbian或者Bilibili上搜，有不少的大佬有很不错的分享，如：Frankiesmall, koryking等。
+还有一点事先说明，我不分享UI的设计，如果有需要的伙伴，可以在网上搜索，有不少的大佬有很不错的分享，如：Frankiesmall, koryking等。
    1. [系统构成](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/System%20Composed.md)：网关的选择建议和说明
    2. [集成列表](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/integrations.md)
    3. [仪表盘](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/README.md)：农历，天气等
