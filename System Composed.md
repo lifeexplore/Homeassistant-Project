@@ -10,7 +10,7 @@
 * 硬件：[藏机](https://www.zigbee.cc)
 * 连接：Wifi
 * OS：[Tasmota](https://tasmota.github.io/docs/)
-* 设备：人体存在传感器，温湿度传感器
+* 设备：人体存在传感器，温湿度传感器，UIOT传感器和窗帘
 
 [BLE](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/README.md)：
 
