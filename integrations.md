@@ -16,6 +16,7 @@
   * [iOS Theme](https://github.com/JuanMTech/ios-theme)
   * [layout-card](https://github.com/thomasloven/lovelace-layout-card)
   * [Logbook Card](https://github.com/royto/logbook-card)
+  * [lovelace-text-input-row](https://github.com/gadgetchnnel/lovelace-text-input-row)
   * [mini-graph-card](https://github.com/kalkih/mini-graph-card)
   * [Mini Media Player](https://github.com/kalkih/mini-media-player)
   * [MQTT](https://www.home-assistant.io/integrations/mqtt)
