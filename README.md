@@ -26,4 +26,4 @@
    15. [UIOT设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)：空调/窗帘/传感器
    16. [C-Bus接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/CBUS/README.md)：灯光
    17. [远程控制](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/remote.md)：Cpolar
-   18. [AI的使用](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Grok.md)：Grok
+   18. [AI的使用](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/gemini.md)：Gemini
