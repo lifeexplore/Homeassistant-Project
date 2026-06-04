@@ -26,7 +26,7 @@
   * [Onvif](https://www.home-assistant.io/integrations/onvif)
   * [Passive BLE monitor integration](https://github.com/custom-components/ble_monitor)
   * [Portainer](https://github.com/tomaae/homeassistant-portainer)
-  * [Simple Thermostat](https://github.com/nervetattoo/simple-thermostat)
+  * [Simple Thermostat](https://github.com/Wheemer/simple-thermostat))
   * [Sun](https://www.home-assistant.io/integrations/sun)
   * [Tasmota](https://www.home-assistant.io/integrations/tasmota)
   * [Time & Date](https://www.home-assistant.io/integrations/time_date)
