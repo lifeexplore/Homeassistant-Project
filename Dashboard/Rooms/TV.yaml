@@ -3,7 +3,7 @@ name: TV
 device_class: TV
 unique_id: tv
 state_template: >
-  {% if(states['media_player.xiaomi_4kh1_b920_play_control'].state=='idle') %}
+  {% if state_attr('media_player.xiaomi_4kh1_b920_play_control', '6095_state')  %}
   on
   {% else %} 
   off
