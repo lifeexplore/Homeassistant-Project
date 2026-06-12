@@ -5,4 +5,4 @@
 
 方案选择：
 * Hass自带：成本较高
-* Tailscale: 手机/电脑上必须要运行客户端
+* [Tailscale](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Tailscale%20Setup/README.md): 手机/电脑上必须要运行客户端
