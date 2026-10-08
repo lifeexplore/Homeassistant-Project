@@ -9,7 +9,7 @@
   * [Clash Controller](https://github.com/myhades/ha-clash-controller)
   * [Colorfulclous Weather Card](https://github.com/fineemb/lovelace-colorfulclouds-weather-card)
   * [Config Template Card](https://github.com/iantrich/config-template-card)
-  * [[custom local icons](https://github.com/Mariusthvdb/custom_local_icons)
+  * [custom local icons](https://github.com/Mariusthvdb/custom_local_icons)
   * [Docker card](https://github.com/vineetchoudhary/lovelace-docker-card)
   * [Edge TTS](https://github.com/hasscc/hass-edge-tts)
   * [HACS](https://github.com/hacs/integration)
