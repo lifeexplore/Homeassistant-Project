@@ -12,6 +12,7 @@
   * [custom local icons](https://github.com/Mariusthvdb/custom_local_icons)
   * [Docker card](https://github.com/vineetchoudhary/lovelace-docker-card)
   * [Edge TTS](https://github.com/hasscc/hass-edge-tts)
+  * [ESPHome](https://www.home-assistant.io/integrations/esphome)
   * [HACS](https://github.com/hacs/integration)
   * [Homekit Bridge](https://www.home-assistant.io/integrations/homekit)
   * [iPhone Device Tracker](https://github.com/mudape/iphonedetect)
@@ -35,3 +36,4 @@
   * [Tuya](https://www.home-assistant.io/integrations/tuya)
   * [WebRTC](https://github.com/AlexxIT/WebRTC)
   * [Xiaomi Miot Auto](https://github.com/al-one/hass-xiaomi-miot)
+  * [UPnP](https://www.home-assistant.io/integrations/upnp)
