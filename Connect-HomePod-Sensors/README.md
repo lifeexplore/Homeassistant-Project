@@ -22,7 +22,7 @@ WARNING！IOS27开始，苹果封锁了Homepod和Apple TV的URL访问权限，�
   3. [定义传感器](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/sensor.yaml)
   4. 设置HomeAssitant下的自动化：[timer_to_homekit](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/timer_to_homekit.yaml)
   5. 从HomeAssistant获取授权的长效Token
-  4. 设置Homekit的自动化进程：[automation_1](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_1.png)，[automation_2](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_2.png)，[automation_3](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_3.png)，[automation_4](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_4.png)
+  4. 设置Homekit的自动化进程：[automation_1](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_1.jpg)，[automation_2](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_2.jpg)，[automation_3](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_3.jpg)，[automation_4](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/Automation_4.jpg)
      
 Homekit设置说明：
   1. HomeKit Bridge设置的Boolean为触发器
