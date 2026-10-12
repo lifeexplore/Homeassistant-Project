@@ -8,8 +8,14 @@
 * EW10的调试：https://blog.csdn.net/qq_44295125/article/details/107867234
 * 连接设置：CNI，xx.xx.xx.xx:8899
 * 施耐德的[Toolkit](https://www.se.com/au/en/download/document/C-Bus-Toolkit_V1160/)连接：https://www.schneider-electric.cn/zh/faqs/FA321883/
-* Docker安装[cmqttd](https://github.com/micolous/cbus)，连接HASS
+* Docker安装[cmqttd](https://hub.docker.com/r/geoffh1977/cmqttd)，连接HASS
 * HASS自动发现设备
 	
 补充：
-* cmqttd会传输256个灯设备到HASS，如果不希望收到过多的垃圾，可以通过修改cmqttd.py和test_cmqttd.py减少数据发送
+* cmqttd会传输256个灯设备到HASS，如果不希望收到过多的垃圾，可以通过修改common.py减少数据发送
+
+   docker cp cmqttd:/usr/lib/python3.8/site-packages/cbus/common.py /opt/common.py 
+
+   # MAX_GROUP_ADDR从255改为10
+
+   docker cp /opt/common.py cmqttd:/usr/lib/python3.8/site-packages/cbus/common.py
