@@ -14,7 +14,7 @@
 补充：
 * cmqttd会传输256个灯设备到HASS，如果不希望收到过多的垃圾，可以通过修改common.py减少数据发送
 
-   docker cp cmqttd:/usr/lib/python3.8/site-packages/cbus/common.py /opt/common.py 
+   docker cp cmqttd:/usr/lib/python3.8/site-packages/cbus/common.py /opt/common.py
 
    # MAX_GROUP_ADDR从255改为10
 
