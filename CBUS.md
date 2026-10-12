@@ -16,6 +16,6 @@
 
    docker cp cmqttd:/usr/lib/python3.8/site-packages/cbus/common.py /opt/common.py
 
-   # MAX_GROUP_ADDR从255改为10
+   MAX_GROUP_ADDR从255改为10
 
    docker cp /opt/common.py cmqttd:/usr/lib/python3.8/site-packages/cbus/common.py
