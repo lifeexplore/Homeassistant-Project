@@ -14,7 +14,7 @@ WARNING！IOS27开始，苹果封锁了Homepod和Apple TV的URL访问权限，�
 	c. Homekit将传感器的数据送到HomeAsssitant的实体中。
 		
 主要的参考：
-  https://community.home-assistant.io/t/how-to-integrate-homepod-mini-sensors-into-home-assistant-when-direct-integration-isnt-possible/665074/3	    
+  https://community.home-assistant.io/t/how-to-integrate-homepod-mini-sensors-into-home-assistant-when-direct-integration-isnt-possible/665074/134
 		    
 步骤：
   1. 在configuration.yaml中增加定义[boolean](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Connect-HomePod-Sensors/boolean.yaml)
