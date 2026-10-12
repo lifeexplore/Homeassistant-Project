@@ -1,23 +1,37 @@
-#
-# Homepod sensors
-#
-- platform: template
-  # 传感器列表
-  sensors:
-    kitchen_temperature:
-      # 实体名称：小写，下划线
-      unique_id: "kitchen_temperature"  
-      # （可选）传感器数值的单位
-      unit_of_measurement: '℃'
-      #（必须）定义一个获取传感器状态（数值）的模板
-      value_template: '{{float}}'
-    kitchen_humidity:
-      unique_id: "kitchen_humidity"  
-      # （可选）传感器数值的单位
+#Homepod Sensors
+- trigger:
+    - platform: event
+      event_type: homepod_sensors_update
+  sensor:
+    - name: Bedroom Temperature
+      unique_id: bedroom_temperature
+      icon: mdi:thermometer
+      state: '{{ trigger.event.data.bedroom_temp }}'
+      unit_of_measurement: '°C'
+      device_class: temperature
+      state_class: measurement
+    - name: Bedroom Humidity
+      unique_id: bedroom_humidity
       unit_of_measurement: '%'
-      #（必须）定义一个获取传感器状态（数值）的模板
-      value_template: '{{value}}'
-   
+      icon: mdi:water-percent      
+      state: '{{ trigger.event.data.bedroom_hum }}'
+      unit_of_measurement: "%"
+      device_class: humidity
+      state_class: measurement         
+    - name: Second Temperature
+      unique_id: second_temperature
+      icon: mdi:thermometer
+      state: '{{ trigger.event.data.second_temp }}'
+      unit_of_measurement: '°C'
+      device_class: temperature
+      state_class: measurement   
+    - name: Second Humidity
+      unique_id: second_humidity
+      unit_of_measurement: '%'
+      icon: mdi:water-percent
+      state: '{{ trigger.event.data.second_hum }}'
+      device_class: humidity
+      state_class: measurement
  
         
         
