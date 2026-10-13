@@ -13,8 +13,8 @@
    2. [集成列表](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/integrations.md)
    3. [仪表盘](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/README.md)：农历，天气等
    4. [空调的节能控制](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/IRACC.md)：可以从[费用曲线](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Dashboard/Layout/Expenses.png)中看到效果明显
-   5. [BLE设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/README.md)：Picooc电子秤，青萍/小米温度计和Smart Light等通过ESPhome接入
-   6. [Zigbee设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Zigbee.md)：Tasmota方案
+   5. [BLE设备接入HASS](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/ESPHome/README.md)：Picooc电子秤，青萍/小米温度计和Smart Light等通过ESPhome接入
+   6. [Zigbee设备接入HASS](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Zigbee.md)：Tasmota方案
    7. [围栏设置和人体监测](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Presence.md)：iPhoneDetect
    8. [TCP/IP网络设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/TCP_IP.md)：EW11
    9. [MQTT](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/MQTT.md)：空调(climate)的实现/模式设置，窗帘(cover)控制
@@ -24,6 +24,6 @@
    13. [NodeRed](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/README.md)：空调，杜亚窗帘，日常费用，智能锁，12123数据追踪
    14. [自动化](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/Automation.md)：早上/晚上问候，空调的不同模式，舒适/节能/睡觉，电视的语音控制，音乐播放睡眠定时，警报的处理
    15. [UIOT设备接入HASS](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/README.md)：空调/窗帘/传感器
-   16. [C-Bus设备接入](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/CBUS.md)：灯光
+   16. [C-Bus设备接入HASS](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/CBUS.md)：灯光
    17. [远程控制](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/remote.md)：Tailscale
    18. [AI的使用](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/gemini.md)：Gemini
