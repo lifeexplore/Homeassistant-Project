@@ -40,9 +40,9 @@
   			on ZbReceived#CustomData=FF238000158D00041EA4EE000021310419031404196C do ZbSend {"Device":%zbdevice%,"Send":"06A0_0a/01004116ff238000158d00041ea4ee000021310419031411b7d7"} endon
 			Rule3 1
 		
-   6. 窗帘的链接方式类似，只是有控制命令，抓包时必须全部抓到
+* 窗帘的链接方式类似，只是有控制命令，抓包时必须全部抓到
 
-   7. [链接效果](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/Success.jpg)
+* [链接效果](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/UIOT/Success.jpg)
 
 补充：
 * 抓包时，设备必须完全复位，才能抓到完整的数据
