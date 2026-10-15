@@ -6,3 +6,5 @@
 * [窗帘](https://github.com/lifeexplore/Homeassistant-Project/blob/Homeassistant-Project/NodeRed/Dooya.md) - 杜亚485连接[EW11](http://www.hi-flying.com/elfin-ew10-elfin-ew11)，[MQTT](https://www.home-assistant.io/integrations/mqtt/)
 
 EW11监测和调试：https://blog.csdn.net/qq_44295125/article/details/107867234
+
+连接：通过NodeRed，方便编程，调试
