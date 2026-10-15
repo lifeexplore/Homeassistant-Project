@@ -15,7 +15,7 @@ Zigbee特点：
 * 响应较快
 * 数据更新及时
 * 成本高于BLE
-* 对比BLE Mesh没有经验
+* BLE Mesh没有经验
 
 抓包：Wireshark
 * 参考：https://e2echina.ti.com/support/wireless-connectivity/zigbee-and-thread/f/zigbee-thread-forum/162782/wireshark-zigbee-sniffer
