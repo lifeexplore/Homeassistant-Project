@@ -2,7 +2,7 @@
 
 WARNING！
 * IOS27开始，苹果封锁了Homepod和Apple TV的URL访问权限，此方法失效！
-* 
+* 解决方法：1. 用Apple TV HD（第四代，之前的版本没有测试过），TVOS26.6，将家庭中枢指向它。2. 用在家的iPad快捷指令（URL可以运行）。
 
 需要的平台：
   1. HomeAssistant
