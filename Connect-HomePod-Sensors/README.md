@@ -8,7 +8,7 @@ WARNING！
 
 需要的平台：
   1. HomeAssistant
-  2. IOS可以需要16以上
+  2. IOS需要27以下
 	
 原理：
   1. 由于IOS的不开放，不可能从其它的软件访问IOS内部的数据，也不可能直接放访问HomePod获得数据，因此只能定时由IOS将数据送给HomeAssistant。
