@@ -1,6 +1,8 @@
 目的：将HomePod的温度和湿度传感器数据实时传入HomeAssistant
 
-WARNING！IOS27开始，苹果封锁了Homepod和Apple TV的URL访问权限，此方法失效！
+WARNING！
+* IOS27开始，苹果封锁了Homepod和Apple TV的URL访问权限，此方法失效！
+* 
 
 需要的平台：
   1. HomeAssistant
