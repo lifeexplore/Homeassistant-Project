@@ -13,9 +13,9 @@ WARNING！
 原理：
   1. 由于IOS的不开放，不可能从其它的软件访问IOS内部的数据，也不可能直接放访问HomePod获得数据，因此只能定时由IOS将数据送给HomeAssistant。
   2. 分工：
-	1. 传感器在HomeAssistant下定义；
-	2. 由于Homekit不能定时触发事件，HomeAssistant提供Homekit Bridge定时触发Homekit的自动化进程；
-	3. Homekit将传感器的数据送到HomeAsssitant的实体中。
+	a. 传感器在HomeAssistant下定义；
+	b. 由于Homekit不能定时触发事件，HomeAssistant提供Homekit Bridge定时触发Homekit的自动化进程；
+	c. Homekit将传感器的数据送到HomeAsssitant的实体中。
 		
 主要的参考：
   https://community.home-assistant.io/t/how-to-integrate-homepod-mini-sensors-into-home-assistant-when-direct-integration-isnt-possible/665074/134
